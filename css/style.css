@@ -1,0 +1,177 @@
+@media screen and (min-width: 1024px){
+  :root{
+    --bg-main: linear-gradient(to bottom right, #ccffff 0%, #ff99cc 100%); 
+    --home-col: red;
+  }
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'DM Sans', sans-serif;
+}
+
+.block{
+  background-color: blue;
+  width: 3em;
+  height: 0.4em;
+  margin: 0.4em;
+}
+#burger{
+  display: none;
+}
+.hidden{
+  display: inline-block;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: larger;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 1em;
+  padding: 0.5em;
+  color: black;
+}
+nav ul li:hover{
+  border-bottom: 0.2em solid blue;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  border-bottom: none;
+}
+nav ul li a:visited{
+  text-decoration: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+section{
+  margin: 1em;
+  padding: 1em;
+}
+#Home{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  height: 100vh;
+}
+
+nav button{
+  margin: 1rem;
+  padding: 0.7em;
+  color: pink;
+  border-radius: 0.5em;
+  font-size: larger;
+  background-color: black;
+}
+#cross{
+  display: none;
+}
+
+img.avatar{
+  display: block;
+  width: 30vw;
+  height: 45vh;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+#icons{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+#icons i{
+  color: var(--home-col);
+}
+#icons i:hover{
+  transform: translateY(5px);
+  color: black;
+}
+#name{
+  font-family:DM Sans;
+  font-size: 4em;
+  
+}
+#titler{
+  font-family:DM Sans;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+iframe{
+  max-width: 100%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+#Skills ul{
+  list-style-type: none;
+}
+#Skills ul li{
+  display: inline-block;
+ margin: 1em;
+}
+.fa-html5{
+  color: darksalmon;
+}
+.fa-css3, .fa-js, .fa-react, .fa-bootstrap{
+  color: blue;
+}
+.fa-node{
+  color: green
+}
+#skills select{
+  width: min-content;
+  padding: 1em;
+}
+label, select{
+  align-self: center;
+  max-width: 20vw;
+}
+.project{
+  width: 30vw;
+}
+#Projects-only{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+#Contact button{
+  margin: 1rem;
+  padding: 0.7em;
+  color: black;
+  border-radius: 0.5em;
+  font-size: larger;
+  background-color: pink;
+}
+
+.input{
+  background-color: grey;
+  border: none;
+  border-radius: 5%;
+}
+#Contact button a{
+  text-decoration: none;
+  color: black;
+}
+.contact:hover{
+  color: pink;
+  background-color: black;
+  transform: translateY(-1em);
+
+}
+footer{
+  padding: 1em;
+}
+}

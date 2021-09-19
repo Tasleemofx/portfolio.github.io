@@ -1,6 +1,63 @@
-/* @media screen and (min-width: 400px){
-  body{
-    color:red;
+@media screen and (min-width: 600px){  
+ 
+  #Home{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  height: 100vh;
+}
+  #icons{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+#icons i{
+  color: var(--bg-nav-color);
+}
+#icons i:hover{
+  transform: translateY(5px);
+  color: black;
+}
+#icons .fa-twitter:hover{
+  transform: translateY(5px);
+  color:  skyblue
+}
+ img.avatar{
+  display: block;
+  width: 30vw;
+  height: 45vh;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+.image{
+  height: 70vh;
+  width: 90vw;
+  position: absolute;
+  z-index: 0;
+}
+ #About{
+    text-align: left;
+    padding: 3em;
+    height: 100vh;
   }
-  
-} */
+  #profile{
+    width: 40vw;
+    line-height: 2em;
+    font-size: 19px;
+    position: relative;
+    top: 0;
+    right: 2;
+}
+#select{
+  text-align: center;
+}
+#Contact{
+  text-align: center;
+}
+  #Skills{
+    padding: 1em;
+    margin: 0.3em auto;
+  }
+}

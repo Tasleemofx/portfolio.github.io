@@ -1,11 +1,30 @@
   :root{
-    --bg-main: linear-gradient(to bottom right, #ccffff 0%, #ff99cc 100%); 
+    --bg-main: #ffcc99;
+    --default-color: black;
+    --color-white: white;
+    --bg-group: radial-gradient(chocolate, brown); 
+    --bg-nav-color: #994d00;
+    --bg-code: green;
+    --bg-live: red;
   }
- header{
-   color: magenta;
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: var(--bg-main);
+    color: var(--default-color)
+  }
+ header h1{
+   font-size: 30px;
+   color: var(--color-white);
+   margin: 0.4em;
  }
   section{
-    margin: 0;
+    margin: 1em;
+    padding: 1em;
   }
   .top-flex{
     display: flex;
@@ -26,6 +45,9 @@
   margin: 2px;
   background: var(--bg-main);
 }
+#cross:hover{
+  transform: translate(2px)
+}
 .d1.change, .d3.change{
   position: relative;
   top: 1;
@@ -43,22 +65,19 @@ nav{
   margin: 0;
   position: sticky;
   top:0;
-  background-color: white;
+  background-color:var(--bg-nav-color);
+  z-index: 1;
 }
   nav ul li{
   list-style-type: none;
-  display: block;
   margin: 0.3em;
   padding: 0.5em;
-  color: black;
+  color: var(--color-white);
 }
-nav ul li a:hover{
-  cursor: pointer;
-}
+
 nav ul li a{
   text-decoration: none;
-  color: rgb(230, 26, 26);
-  border-bottom: 2px solid blue
+  color: var(--bg-main);
 }
 nav ul li a:visited{
   text-decoration: none;
@@ -67,7 +86,7 @@ nav ul li a:visited{
   color: brown;
 }
 .fa-2x:active{
-  color: white;
+  color: var(--color-white);
 }
 #underline{
   width: 100%;
@@ -81,15 +100,14 @@ nav ul li a:visited{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: seashell;
+    background-color: var(--bg-nav-color);
     margin: 0;
     padding: 1em;
     width: 60%;
   }
 
   #Home{
-  background: var(--bg-main);
-  color: red;
+  color: var(--bg-nav-color);
   display: flex;
   flex-direction: column-reverse;
   gap: 5em;
@@ -99,25 +117,7 @@ nav ul li a:visited{
   padding: 2em;
   margin: 1em 0;
 }
-img.avatar{
-  display: none;
-}
-.fa-html5{
-  color: darksalmon;
-}
-.fa-css3{
-  color: lightskyblue;
-}
-.fa-js, .fa-react, .fa-bootstrap{
-  color: blue;
-}
-.fa-node{
-  color: green
-}
-.fa-git-alt{
-  color: #ff6633;
-}
-  #icons{
+ #icons{
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -134,6 +134,37 @@ img.avatar{
 .strikethrough{
   text-decoration: line-through;
 }
+img, .avatar{
+  display: none;
+}
+#About{
+  background-color: var(--color-white);
+  padding: 1em;
+  text-align: center;
+}
+.fa-html5{
+  color: darksalmon;
+}
+.fa-css3{
+  color: lightskyblue;
+}
+.fa-js, .fa-react, .fa-bootstrap{
+  color: blue;
+}
+.fa-node{
+  color: green
+}
+.fa-git-alt{
+  color: #ff6633;
+}
+#Skills ul li{
+  list-style-type: none;
+} 
+#Skills ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+ 
 #Projects{
   display: flex;
   flex-direction: column;
@@ -148,26 +179,32 @@ img.avatar{
   padding: 2px;
   width: 80vw;
 }
-
+option{
+  background-color: var(--bg-nav-color);
+  color: var(--color-white)
+}
 .code{
-  padding: 3px;
+  padding: 5px;
   color: white;
-  background-color: green;
-  border: 2px solid green;
+  background-color: var(--bg-code);
+  border: 2px solid var(--bg-code);
   border-radius: 5px;
   font-weight: bold;
 }
 .live{
-  padding: 3px;
+  padding: 5px;
   color: white;
-  background-color: red;
-  border: 2px solid red;
+  background-color: var(--bg-live);
+  border: 2px solid var(--bg-live);
   border-radius: 5px;
   font-weight: bold;
 }
+#Contact i{
+  color: var(--bg-nav-color);
+}
 footer{
   text-align: center;
-  background: var(--bg-main);
-  color: red;
+  background: var(--bg-nav-color);
+  color:var(--bg-main);
   padding: 1em;
 }

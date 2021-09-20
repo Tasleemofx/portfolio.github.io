@@ -66,11 +66,12 @@ main{
   font-size: 2em;
   font-weight: 200;
 }
-.image{
-  display: block;
-  height: 70vh;
-  width: 90vw;
-  position:absolute;
+#About{
+  background-size: 100vw;
+  height: 100vh;
+}
+#profile{
+  line-height: 2em;
 }
 
 iframe{

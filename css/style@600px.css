@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-items: space-between;
   height: 100vh;
+  margin: 10px auto;
 }
   #icons{
   display: flex;
@@ -21,30 +22,30 @@
 }
 #icons .fa-twitter:hover{
   transform: translateY(5px);
-  color:  skyblue
+  color:  rgb(42, 123, 155)
 }
  img.avatar{
   display: block;
   width: 30vw;
   height: 45vh;
-  border-radius: 50%;
+  border-radius: 30% 50%;
   margin: 0.5em;
 }
 
-.image{
-  height: 70vh;
-  width: 90vw;
-  position: absolute;
-  z-index: 0;
-}
  #About{
+    background-image: url(../images/coffee-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
     text-align: left;
     padding: 3em;
-    height: 100vh;
+    height: max-content;
+    margin: 0;
+    color: var(--bg-nav-color)
   }
   #profile{
     width: 40vw;
-    line-height: 2em;
+    line-height: 1.2em;
     font-size: 19px;
     position: relative;
     top: 0;

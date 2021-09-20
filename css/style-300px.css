@@ -88,11 +88,6 @@ nav ul li a:visited{
 .fa-2x:active{
   color: var(--color-white);
 }
-#underline{
-  width: 100%;
-  height: 1vh;
-  background-color: rgba(128, 128, 128, .2);
-}
   .show-300{
     display: flex;
     flex-direction: row;
@@ -140,6 +135,7 @@ img, .avatar{
 #About{
   background-color: var(--color-white);
   padding: 1em;
+  margin: 0;
   text-align: center;
 }
 .fa-html5{
@@ -190,6 +186,7 @@ option{
   border: 2px solid var(--bg-code);
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;  
 }
 .live{
   padding: 5px;
@@ -198,6 +195,7 @@ option{
   border: 2px solid var(--bg-live);
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 #Contact i{
   color: var(--bg-nav-color);

@@ -100,13 +100,9 @@ label, select{
   align-self: center;
   max-width: 20vw;
 }
-.project{
-  width: 30vw;
-}
+
 #Projects-only{
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #Contact button{

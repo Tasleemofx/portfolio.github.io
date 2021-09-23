@@ -20,7 +20,7 @@
   transform: translateY(5px);
   color: black;
 }
-#icons .fa-twitter:hover{
+#icons .fa-twitter:hover, #icons .fa-linkedin:hover{
   transform: translateY(5px);
   color:  rgb(42, 123, 155)
 }
@@ -61,4 +61,11 @@
     padding: 1em;
     margin: 0.3em auto;
   }
+  .project{
+  width: 30vw;
+}
+#Projects-only{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 }

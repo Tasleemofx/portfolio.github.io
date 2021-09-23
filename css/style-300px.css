@@ -83,7 +83,7 @@ nav ul li a:visited{
   text-decoration: none;
 }
 .fa-2x{
-  color: brown;
+  color: var(--bg-nav-color);
 }
 .fa-2x:active{
   color: var(--color-white);

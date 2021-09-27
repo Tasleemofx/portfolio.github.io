@@ -32,13 +32,31 @@ navUl.forEach((listItem)=>{
 selector.addEventListener('change', change)
 
 function change() {
+    projectList.forEach(item => item.classList.remove('hide'))
     if(selector.value === 'html'){
-        projectList.innerHTML = [...htmlCss]
-        .forEach(item=> {
-        console.log(item.innerHTML)
-        return item.innerHTML
+       [...projectList].filter(item=>{
+           if(!(item.classList.contains('html-css'))){
+               item.classList.add('hide')
+            }
+       })
+    }else if(selector.value === "all"){
+        projectList.forEach(item=> item.classList.remove('hide'))
+    } else if (selector.value === "js"){
+        [...projectList].filter(item => {
+        if (!(item.classList.contains('js'))) {
+            item.classList.add('hide')        }
         })
-        
-    }
+    } else if (selector.value === "react") {
+        [...projectList].filter(item =>{
+            if (!(item.classList.contains('react'))) {
+            item.classList.add('hide')
+        }
+        })
+    }else if(selector.value === "node"){
+        [...projectList].filter(item =>{
+            if (!(item.classList.contains('node'))){
+            item.classList.add('hide')
+        }
+    })
 }
-
+}

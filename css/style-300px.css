@@ -171,6 +171,9 @@ img, .avatar{
   gap: 1em;
   margin: 1em;
 }
+.hide{
+  display: none
+}
 .project{
   padding: 2px;
   width: 80vw;

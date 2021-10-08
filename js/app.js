@@ -14,6 +14,14 @@ const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 
 
+//scroll reveal
+// projectList.addEventListener('scroll',()=>{
+//     ScrollReveal().reveal('.project', { delay: 1000, interval: 50 });
+//     ScrollReveal().reveal('#About', { delay: 500 });
+//     ScrollReveal().reveal('#Home', { delay: 800})
+// })
+
+
 //burger interactivity
 burger.addEventListener("click",()=>{
     showlist.classList.add('show-300')

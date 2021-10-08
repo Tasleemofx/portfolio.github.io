@@ -17,10 +17,12 @@
     background-color: var(--bg-main);
     color: var(--default-color)
   }
- header h1{
-   font-size: 30px;
+
+ header h1 a{
+   font-size: 25px;
    color: var(--color-white);
    margin: 0.4em;
+   text-decoration: none;
  }
   section{
     margin: 1em;
@@ -132,6 +134,7 @@ nav ul li a:visited{
 img, .avatar{
   display: none;
 }
+
 #About{
   background-color: var(--color-white);
   padding: 1em;

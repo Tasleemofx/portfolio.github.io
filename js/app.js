@@ -14,25 +14,27 @@ const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 
 
+
 //scroll reveal
-// projectList.addEventListener('scroll',()=>{
-//     ScrollReveal().reveal('.project', { delay: 1000, interval: 50 });
-//     ScrollReveal().reveal('#About', { delay: 500 });
-//     ScrollReveal().reveal('#Home', { delay: 800})
-// })
 
 
 //burger interactivity
 burger.addEventListener("click",()=>{
     showlist.classList.add('show-300')
+    showlist.classList.remove('hidden')
 })
 cross.addEventListener('click',()=>{
     showlist.classList.remove('show-300')
+    showlist.classList.add('hidden')
 })
 const navUl = document.querySelectorAll('nav ul li');
 navUl.forEach((listItem)=>{
     listItem.addEventListener('click',()=>{
         showlist.classList.remove('show-300')
+        showlist.classList.add('hidden')
+        setInterval(()=>{
+            showlist.classList.add('hide')
+        }, 500)        
     })
 })
 

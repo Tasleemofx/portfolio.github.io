@@ -37,9 +37,7 @@
     display: block;
     margin: 1em;
   }
-  .hidden{
-    display: none;
-  }
+  
  
 .d1, .d2, .d3{
   width: 20px;
@@ -65,10 +63,7 @@
 }
 nav{
   margin: 0;
-  position: sticky;
-  top:0;
   background-color:var(--bg-nav-color);
-  z-index: 1;
 }
   nav ul li{
   list-style-type: none;
@@ -101,7 +96,36 @@ nav ul li a:visited{
     margin: 0;
     padding: 1em;
     width: 60%;
+     -webkit-animation-name: easer-in;
+    -webkit-animation-duration:  700ms;
+    -webkit-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
+    animation-name: easer-in;
+    animation-duration:  700ms;
+    animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
+   
   }
+
+  @keyframes easer-in {
+    0%{
+      display: none;
+      width: 0;
+    }
+    50%{
+      display: flex;
+      width: 60%;
+      opacity: 0.2;
+    }
+    100%{
+      display: flex;
+      width: 60%;
+      opacity: 1;
+    }
+  }
+  section div{
+   animation: 10s ease-in 10s infinite reverse both running slidein;
+  }
+  
+  
 
   #Home{
   color: var(--bg-nav-color);
@@ -174,8 +198,31 @@ img, .avatar{
   gap: 1em;
   margin: 1em;
 }
+.hidden{
+ /* animation-name: hider;
+ animation-delay:1000ms;
+ animation-direction: normal;
+ animation-fill-mode: forwards;
+ animation-duration: 1000ms; */
+ display:none;
+}
 .hide{
-  display: none
+  display: none;
+}
+
+@keyframes hider {
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0.7;
+  }
+  70%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 .project{
   padding: 2px;

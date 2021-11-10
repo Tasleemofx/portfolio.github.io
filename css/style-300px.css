@@ -64,6 +64,9 @@
 nav{
   margin: 0;
   background-color:var(--bg-nav-color);
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0; */
 }
   nav ul li{
   list-style-type: none;
@@ -98,11 +101,16 @@ nav ul li a:visited{
     width: 60%;
      -webkit-animation-name: easer-in;
     -webkit-animation-duration:  700ms;
-    -webkit-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
+    -webkit-animation-timing-function:cubic-bezier(0, 1.24, 0.98, -0.32);
     animation-name: easer-in;
     animation-duration:  700ms;
     animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
-   
+    -o-animation-name: easer-in;
+    -o-animation-duration:  700ms;
+    -o-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
+    -moz-animation-name: easer-in;
+    -moz-animation-duration:  700ms;
+    -moz-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
   }
 
   @keyframes easer-in {
@@ -133,7 +141,7 @@ nav ul li a:visited{
   flex-direction: column-reverse;
   gap: 5em;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   height: 50vh;
   padding: 2em;
   margin: 1em 0;
@@ -161,19 +169,22 @@ img, .avatar{
 
 #About{
   background-color: var(--color-white);
-  padding: 1em;
+  padding: 2em;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 .fa-html5{
   color: darksalmon;
 }
-.fa-css3{
-  color: lightskyblue;
+.fa-css3-alt{
+  color: rgb(30, 141, 192);
 }
-.fa-js, .fa-react, .fa-bootstrap{
+.fa-js, .fa-bootstrap{
   color: blue;
 }
+.fa-react{
+   color: lightseagreen;
+ }
 .fa-node{
   color: green
 }
@@ -188,6 +199,12 @@ img, .avatar{
   grid-template-columns: repeat(3,1fr);
 }
  
+#About{
+    background-image: url(../images/coffee-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
 #Projects{
   display: flex;
   flex-direction: column;

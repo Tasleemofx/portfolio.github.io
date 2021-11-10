@@ -58,13 +58,13 @@ main{
 
 #name{
   font-family:DM Sans;
-  font-size: 4em;
+  font-size: 3em;
   
 }
 #titler{
   font-family:DM Sans;
-  font-size: 2em;
-  font-weight: 200;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 #About{
   background-size: 100vw;

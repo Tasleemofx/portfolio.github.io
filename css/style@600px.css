@@ -2,15 +2,13 @@
  
   #Home{
   display: flex;
-  flex-direction: row;
-  justify-items: space-between;
   height: 100vh;
-  margin: 10px auto;
+  margin: 3px;
+  padding: 1px;
 }
   #icons{
   display: flex;
-  flex-direction: column;
-  gap: 3em;
+  gap: 1em;
 }
 
 #icons i{
@@ -24,19 +22,8 @@
   transform: translateY(5px);
   color:  rgb(42, 123, 155)
 }
- img.avatar{
-  display: block;
-  width: 30vw;
-  height: 45vh;
-  border-radius: 30% 50%;
-  margin: 0.5em;
-}
 
  #About{
-    background-image: url(../images/coffee-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 0.8;
     text-align: left;
     padding: 3em;
     height: max-content;

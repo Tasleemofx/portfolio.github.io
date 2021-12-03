@@ -7,7 +7,7 @@
   display: flex;
   height: 70vh;
   width: 70%; 
- margin: 3px auto;
+ margin: 1em auto;
   padding: 1px;
 }
 #name{
@@ -22,6 +22,7 @@
   #icons{
   display: flex;
   gap: 3em;
+  margin: 0 0 20px 0;
 }
 
 nav{
@@ -52,16 +53,12 @@ nav{
   text-align: center;
 }
 
-.project{
-  width: 40vw;
-}
+
 #Projects-only{
   align-items: center;
-  margin:0;
-  gap:0;
 }
 #Projects-only iframe{
-  width: 50vw;
+  width: 70vw;
 }
 
 }

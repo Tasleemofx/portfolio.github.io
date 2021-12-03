@@ -12,29 +12,39 @@ const js = document.querySelectorAll(".js")
 const react = document.querySelectorAll('.react')
 const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
+const themeIcon = document.querySelector('#theme-icon');
+const bodyclass = document.querySelector('body');
+// light mode and dark mode
 
-
-
+themeIcon.addEventListener("click",()=>{
+    if (themeIcon.src === "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"){
+        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        bodyclass.classList.add('bodyclass')
+    }else{
+        themeIcon.src = "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"
+        bodyclass.classList.remove('bodyclass')
+}
+})
 //scroll reveal
 
 
 //burger interactivity
 burger.addEventListener("click",()=>{
-    showlist.classList.add('show-300')
-    showlist.classList.remove('hidden')
+    showlist.classList.toggle('show-300')
+    showlist.classList.toggle('hidden')
 })
 cross.addEventListener('click',()=>{
-    showlist.classList.remove('show-300')
-    showlist.classList.add('hidden')
+    showlist.classList.toggle('show-300')
+    showlist.classList.toggle('hidden')
 })
 const navUl = document.querySelectorAll('nav ul li');
 navUl.forEach((listItem)=>{
     listItem.addEventListener('click',()=>{
-        showlist.classList.remove('show-300')
-        showlist.classList.add('hidden')
-        setInterval(()=>{
-            showlist.classList.add('hide')
-        }, 500)        
+        showlist.classList.toggle('show-300')
+        showlist.classList.toggle('hidden')
+        // setInterval(()=>{
+        //     showlist.classList.add('hide')
+        // }, 500)
     })
 })
 

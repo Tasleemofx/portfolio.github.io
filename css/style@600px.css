@@ -1,26 +1,31 @@
 @media screen and (min-width: 600px){  
- 
+ #theme-icon{
+   cursor: pointer;
+ }
+
   #Home{
   display: flex;
-  height: 100vh;
-  margin: 3px;
+  height: 70vh;
+  width: 70%; 
+ margin: 3px auto;
   padding: 1px;
+}
+#name{
+  font-family:DM Sans;
+  font-size: 3em;
+  font-weight: bolder;
+}
+#titler{
+  font-family:Urbanist;
+  font-size: 1.5em;
 }
   #icons{
   display: flex;
-  gap: 1em;
+  gap: 3em;
 }
 
-#icons i{
-  color: var(--bg-nav-color);
-}
-#icons i:hover{
-  transform: translateY(5px);
-  color: black;
-}
-#icons .fa-twitter:hover, #icons .fa-linkedin:hover{
-  transform: translateY(5px);
-  color:  rgb(42, 123, 155)
+nav{
+  width: 100%;
 }
 
  #About{
@@ -28,31 +33,36 @@
     padding: 3em;
     height: max-content;
     margin: 0;
-    color: var(--bg-nav-color)
+    color: var(--bg-nav-color);
+    background-size: 100vw;
   }
   #profile{
-    width: 40vw;
+    width: 50vw;
     line-height: 1.2em;
     font-size: 19px;
     position: relative;
     top: 0;
     right: 2;
 }
+
 #select{
   text-align: center;
 }
 #Contact{
   text-align: center;
 }
-  #Skills{
-    padding: 1em;
-    margin: 0.3em auto;
-  }
-  .project{
-  width: 30vw;
+
+.project{
+  width: 40vw;
 }
 #Projects-only{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  margin:0;
+  gap:0;
 }
+#Projects-only iframe{
+  width: 50vw;
 }
+
+}
+

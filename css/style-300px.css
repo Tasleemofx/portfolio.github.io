@@ -1,27 +1,38 @@
   :root{
-    --bg-main: #ffcc99;
-    --default-color: black;
-    --color-white: white;
-    --bg-group: radial-gradient(chocolate, brown); 
-    --bg-nav-color: #994d00;
-    --bg-code: green;
-    --bg-live: red;
+      --bg-main: white;
+      --default-color: black;
+      --color-anim: blue;
+      --color-shade: white;
+      --bg-group: lightseagreen;
+      --bg-nav-color: black;
+      --bg-code: green;
+      --bg-live: red;
   }
   *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  
+
   body{
     background-color: var(--bg-main);
     color: var(--default-color)
   }
 
+  .bodyclass{
+    --bg-main: #000;
+    --default-color: #e6e6ff;
+    --color-anim: yellow;
+    --color-shade: black;
+    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
+    --bg-nav-color: white;
+    --bg-code: green;
+    --bg-live: red;
+  }
+
  header h1 a{
-   font-size: 25px;
-   color: var(--color-white);
-   margin: 0.4em;
+   font-size: 0.9em;
+   color: var(--color-shade);
    text-decoration: none;
  }
   section{
@@ -32,14 +43,7 @@
     display: flex;
     justify-content: space-between;
   }
-
-  #burger{
-    display: block;
-    margin: 1em;
-  }
-  
- 
-.d1, .d2, .d3{
+ .d1, .d2, .d3{
   width: 20px;
   height: 3px;
   margin: 2px;
@@ -52,7 +56,7 @@
   position: relative;
   top: 1;
   right: 0;
-  
+
 }
 .d1.change{
   transform: rotate(45deg) translateX(2px);
@@ -63,16 +67,22 @@
 }
 nav{
   margin: 0;
+  padding: 1em;
   background-color:var(--bg-nav-color);
-  /* position: sticky;
+  position: sticky;
   position: -webkit-sticky;
-  top: 0; */
+  top: 0;
+  width: 100vw;
+}
+#theme-icon{
+  width: 1.7em;
+  height: 1.4em;
 }
   nav ul li{
   list-style-type: none;
   margin: 0.3em;
   padding: 0.5em;
-  color: var(--color-white);
+  color: var(--color-shade);
 }
 
 nav ul li a{
@@ -86,7 +96,7 @@ nav ul li a:visited{
   color: var(--bg-nav-color);
 }
 .fa-2x:active{
-  color: var(--color-white);
+  color: var(--color-shade);
 }
   .show-300{
     display: flex;
@@ -132,8 +142,8 @@ nav ul li a:visited{
   section div{
    animation: 10s ease-in 10s infinite reverse both running slidein;
   }
-  
-  
+
+
 
   #Home{
   color: var(--bg-nav-color);
@@ -143,7 +153,6 @@ nav ul li a:visited{
   align-items: center;
   justify-content: center;
   height: 50vh;
-  padding: 2em;
   margin: 1em 0;
 }
  #icons{
@@ -153,25 +162,23 @@ nav ul li a:visited{
 }
   #name{
   font-family:DM Sans;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bolder;
 }
 #titler{
   font-family:Urbanist;
-  font-size: 2em;
+  font-size: 0.5em;
 }
-.strikethrough{
-  text-decoration: line-through;
-}
-img, .avatar{
-  display: none;
-}
-
 #About{
-  background-color: var(--color-white);
-  padding: 2em;
+  color: var(--color-shade);
+  padding: 1em;
   margin: 0;
   text-align: left;
+  height: 100vh;
+}
+#profile{
+color: black;
+width: 60vw;
 }
 .fa-html5{
   color: darksalmon;
@@ -179,7 +186,11 @@ img, .avatar{
 .fa-css3-alt{
   color: rgb(30, 141, 192);
 }
-.fa-js, .fa-bootstrap{
+.fa-js{
+  color: yellow;
+  background-color: black;
+}
+ .fa-bootstrap{
   color: blue;
 }
 .fa-react{
@@ -191,19 +202,35 @@ img, .avatar{
 .fa-git-alt{
   color: #ff6633;
 }
+.fa-github{
+  color: var(--bg-nav-color);
+}
+.fa-twitter{
+  color: lightseagreen;
+}
+.fa-codepen{
+  color: var(--bg-nav-color);
+}
+.fa-linkedin{
+  color: rgb(112, 112, 228);
+}
+.icons{
+  width: 3em;
+  height: 4em;
+}
 #Skills ul li{
   list-style-type: none;
-} 
+}
 #Skills ul{
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
- 
+
 #About{
     background-image: url(../images/coffee-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 0.8;
+    background-size: 100vw;
+    background-repeat:repeat-y;
+    z-index:99;
 }
 #Projects{
   display: flex;
@@ -216,11 +243,6 @@ img, .avatar{
   margin: 1em;
 }
 .hidden{
- /* animation-name: hider;
- animation-delay:1000ms;
- animation-direction: normal;
- animation-fill-mode: forwards;
- animation-duration: 1000ms; */
  display:none;
 }
 .hide{
@@ -245,9 +267,14 @@ img, .avatar{
   padding: 2px;
   width: 80vw;
 }
+#Projects-only iframe{
+  width: 70vw;
+  height: 50vh;
+  overflow-x: hidden;
+}
 option{
   background-color: var(--bg-nav-color);
-  color: var(--color-white)
+  color: var(--color-shade)
 }
 .code{
   padding: 5px;
@@ -256,7 +283,7 @@ option{
   border: 2px solid var(--bg-code);
   border-radius: 5px;
   font-weight: bold;
-  cursor: pointer;  
+  cursor: pointer;
 }
 .live{
   padding: 5px;

@@ -29,14 +29,6 @@ nav{
   width: 100%;
 }
 
- #About{
-    text-align: left;
-    padding: 3em;
-    height: max-content;
-    margin: 0;
-    color: var(--bg-nav-color);
-    background-size: 100vw;
-  }
   #profile{
     width: 50vw;
     line-height: 1.2em;
@@ -45,7 +37,13 @@ nav{
     top: 0;
     right: 2;
 }
-
+#Skills{
+   background-image: url(../images/pexels-pixabay-414645.jpg);
+   text-align: center;
+   margin:0;
+   color:white;
+   height: 80vh;
+}
 #select{
   text-align: center;
 }
@@ -57,9 +55,7 @@ nav{
 #Projects-only{
   align-items: center;
 }
-#Projects-only iframe{
-  width: 70vw;
-}
+
 
 }
 

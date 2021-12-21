@@ -3,6 +3,7 @@
       --default-color: black;
       --color-anim: blue;
       --color-shade: white;
+      --inset: rgba(0, 0, 0, 0.2);
       --bg-group: lightseagreen;
       --bg-nav-color: black;
       --bg-code: green;
@@ -25,6 +26,7 @@
     --color-anim: yellow;
     --color-shade: black;
     --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
+    --inset: white;
     --bg-nav-color: white;
     --bg-code: green;
     --bg-live: red;
@@ -165,17 +167,21 @@ nav ul li a:visited{
   font-size: 1em;
   font-weight: bolder;
 }
+.cv-btn{
+  padding: 1em;
+  background-color: var(--default-color);
+  color: var(--bg-main);
+  border-radius: 0.8em;
+  font-family: cursive;
+  }
+  .article{
+    text-align: center;
+  }
 #titler{
   font-family:Urbanist;
-  font-size: 0.5em;
+  font-size: 1em;
 }
-#About{
-  color: var(--color-shade);
-  padding: 1em;
-  margin: 0;
-  text-align: left;
-  height: 100vh;
-}
+
 #profile{
 color: black;
 width: 60vw;
@@ -220,18 +226,13 @@ width: 60vw;
 }
 #Skills ul li{
   list-style-type: none;
+  padding: 1.5em;
 }
 #Skills ul{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
 }
 
-#About{
-    background-image: url(../images/coffee-unsplash.jpg);
-    background-size: 100vw;
-    background-repeat:repeat-y;
-    z-index:99;
-}
 #Projects{
   display: flex;
   flex-direction: column;
@@ -264,13 +265,14 @@ width: 60vw;
   }
 }
 .project{
-  padding: 2px;
-  width: 80vw;
+  padding: 1em;
+  width: 60vw;
+  box-shadow: 0 0.2em 0.4em 0 var(--inset), 0 0.3em 0.8em 0 var(--inset);
+  border-radius: 0.9em;
 }
-#Projects-only iframe{
-  width: 70vw;
+.project img{
+  width: 40vw;
   height: 50vh;
-  overflow-x: hidden;
 }
 option{
   background-color: var(--bg-nav-color);

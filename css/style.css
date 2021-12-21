@@ -72,9 +72,7 @@ main{
   font-size: 1.7em;
   font-weight: 100;
 }
-#About{
-  background-size: 100vw;
-}
+
 #profile{
   line-height: 2em;
 }
@@ -109,14 +107,15 @@ label, select{
   grid-template-columns: repeat(2, 1fr);
 }
 .project{
-  padding: 1px;
+  padding: 1em;
   width: 30vw;
+  text-align: center;
 }
-#Projects-only iframe{
-  width: 30vw;
+
+.project img{
+  width: 20vw;
   height: 50vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  
 }
 #Contact button{
   margin: 1rem;

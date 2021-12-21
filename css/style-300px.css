@@ -265,6 +265,7 @@ width: 60vw;
   }
 }
 .project{
+  margin: 0.5em auto;
   padding: 1em;
   width: 60vw;
   box-shadow: 0 0.2em 0.4em 0 var(--inset), 0 0.3em 0.8em 0 var(--inset);

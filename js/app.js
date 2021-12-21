@@ -13,7 +13,7 @@ const react = document.querySelectorAll('.react')
 const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 const themeIcon = document.querySelector('#theme-icon');
-const bodyclass = document.querySelector('body');
+const bodyclass = document.querySelector('.go');
 // light mode and dark mode
 
 themeIcon.addEventListener("click",()=>{
@@ -40,11 +40,11 @@ cross.addEventListener('click',()=>{
 const navUl = document.querySelectorAll('nav ul li');
 navUl.forEach((listItem)=>{
     listItem.addEventListener('click',()=>{
-        showlist.classList.toggle('show-300')
-        showlist.classList.toggle('hidden')
+        showlist.classList.remove('show-300')
+        showlist.classList.add('hidden')
         // setInterval(()=>{
         //     showlist.classList.add('hide')
-        // }, 500)
+        // }, 500
     })
 })
 

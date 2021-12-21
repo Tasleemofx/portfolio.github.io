@@ -55,7 +55,9 @@ nav{
 #Projects-only{
   align-items: center;
 }
-
+.project{
+  margin: 1em;
+}
 
 }
 

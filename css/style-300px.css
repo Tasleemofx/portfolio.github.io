@@ -218,7 +218,7 @@ width: 60vw;
   color: var(--bg-nav-color);
 }
 .fa-linkedin{
-  color: rgb(112, 112, 228);
+  color: darkblue;
 }
 .icons{
   width: 3em;
@@ -272,7 +272,7 @@ width: 60vw;
   border-radius: 0.9em;
 }
 .project img{
-  width: 40vw;
+  width: 50vw;
   height: 50vh;
 }
 option{

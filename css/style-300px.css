@@ -232,7 +232,16 @@ width: 60vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-
+#skills select{
+  width: min-content;
+  padding: 1em;
+}
+label, select{
+  align-self: center;
+  max-width: 20vw;
+  background-color: var(--bg-main);
+  color:var(--default-color)
+}
 #Projects{
   display: flex;
   flex-direction: column;

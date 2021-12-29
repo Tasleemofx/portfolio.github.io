@@ -93,16 +93,7 @@ main{
 .fa-node{
   color: green
 }
-#skills select{
-  width: min-content;
-  padding: 1em;
-}
-label, select{
-  align-self: center;
-  max-width: 20vw;
-  background-color: var(--bg-nav-color);
-  color:var(--bg-main)
-}
+
 
 #Projects-only{
   display:grid;

@@ -5,9 +5,7 @@
 
   #Home{
   display: flex;
-  height: 70vh;
-  width: 70%; 
- margin: 1em auto;
+  height: 50vh;
   padding: 1px;
 }
 #name{
@@ -38,10 +36,9 @@ nav{
     right: 2;
 }
 #Skills{
-   background-image: url(../images/pexels-pixabay-414645.jpg);
    text-align: center;
    margin:0;
-   color:white;
+   font-weight: 700;
    height: 80vh;
 }
 #select{

@@ -141,6 +141,16 @@ nav ul li a:visited{
       opacity: 1;
     }
   }
+  @keyframes easerOut {
+    from{
+      display: flex;
+      width: 60%;
+      opacity: 1;
+    }
+    to{
+      display: none;
+    }
+  }
   @keyframes sections {
     0%{
       background-color: red;
@@ -166,7 +176,7 @@ nav ul li a:visited{
 
 
   #Home{
-  color: var(--bg-nav-color);
+  color:black;
   display: flex;
   flex-direction: column-reverse;
   gap: 5em;
@@ -230,13 +240,13 @@ width: 60vw;
   color: #ff6633;
 }
 .fa-github{
-  color: var(--bg-nav-color);
+  color: black;
 }
 .fa-twitter{
   color: lightseagreen;
 }
 .fa-codepen{
-  color: var(--bg-nav-color);
+  color: black;
 }
 .fa-linkedin{
   color: darkblue;

@@ -112,16 +112,16 @@ nav ul li a:visited{
     padding: 1em;
     width: 60%;
      -webkit-animation-name: easer-in;
-    -webkit-animation-duration:  700ms;
+    -webkit-animation-duration:  400ms;
     -webkit-animation-timing-function:cubic-bezier(0, 1.24, 0.98, -0.32);
     animation-name: easer-in;
-    animation-duration:  700ms;
+    animation-duration:  400ms;
     animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
     -o-animation-name: easer-in;
-    -o-animation-duration:  700ms;
+    -o-animation-duration:  400ms;
     -o-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
     -moz-animation-name: easer-in;
-    -moz-animation-duration:  700ms;
+    -moz-animation-duration:  400ms;
     -moz-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
   }
 
@@ -141,8 +141,26 @@ nav ul li a:visited{
       opacity: 1;
     }
   }
-  section div{
-   animation: 10s ease-in 10s infinite reverse both running slidein;
+  @keyframes sections {
+    0%{
+      background-color: red;
+      color: black;
+    }
+    25%{
+      background-color: orange;
+      color: blue;
+    }
+    50%{
+      background-color: yellow;
+      color: green;
+    }
+    100%{
+      background-color: inherit;
+      color: inherit;
+  }
+}
+  section{
+   animation: sections 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   }
 
 
@@ -155,7 +173,10 @@ nav ul li a:visited{
   align-items: center;
   justify-content: center;
   height: 50vh;
-  margin: 1em 0;
+  padding: 1em 0;
+  margin: 0;
+  background: url('../images/coffee-unsplash.jpg');
+  background-size: cover;
 }
  #icons{
   display: flex;

@@ -141,36 +141,23 @@ nav ul li a:visited{
       opacity: 1;
     }
   }
-  @keyframes easerOut {
-    from{
-      display: flex;
-      width: 60%;
-      opacity: 1;
-    }
-    to{
-      display: none;
-    }
-  }
+ 
   @keyframes sections {
     0%{
-      background-color: red;
       color: black;
     }
     25%{
-      background-color: orange;
       color: blue;
     }
     50%{
-      background-color: yellow;
       color: green;
     }
     100%{
-      background-color: inherit;
       color: inherit;
   }
 }
-  section{
-   animation: sections 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
+ #Home{
+   animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   }
 
 
@@ -186,7 +173,7 @@ nav ul li a:visited{
   padding: 1em 0;
   margin: 0;
   background: url('../images/coffee-unsplash.jpg');
-  background-size: cover;
+  background-size: contain;
 }
  #icons{
   display: flex;

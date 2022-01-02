@@ -14,6 +14,7 @@ const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 const themeIcon = document.querySelector('#theme-icon');
 const bodyclass = document.querySelector('.go');
+
 // light mode and dark mode
 
 themeIcon.addEventListener("click",()=>{
@@ -26,6 +27,9 @@ themeIcon.addEventListener("click",()=>{
 }
 })
 //scroll reveal
+ScrollReveal().reveal('#Home',{ delay: 250})
+ScrollReveal().reveal('#Skills', { delay: 250 })
+ScrollReveal().reveal('.project', { delay: 250 })
 
 
 //burger interactivity

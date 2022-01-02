@@ -5,9 +5,9 @@
 
   #Home{
   display: flex;
-  height: 50vh;
+  height: 70vh;
   padding: 1px;
-}
+ }
 #name{
   font-family:DM Sans;
   font-size: 3em;

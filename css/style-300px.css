@@ -120,7 +120,7 @@ nav ul li a:visited{
     -o-animation-name: easer-in;
     -o-animation-duration:  400ms;
     -o-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
-    -moz-animation-name: easer-out;
+    -moz-animation-name: easer-in;
     -moz-animation-duration:  400ms;
     -moz-animation-timing-function:  cubic-bezier(0, 1.24, 0.98, -0.32);
   }

@@ -5,7 +5,7 @@
       --color-shade: white;
       --inset: rgba(0, 0, 0, 0.2);
       --bg-group: lightseagreen;
-      --bg-nav-color: black;
+      --bg-nav-color: white;
       --bg-code: green;
       --bg-live: red;
   }
@@ -27,14 +27,14 @@
     --color-shade: black;
     --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
     --inset: white;
-    --bg-nav-color: white;
+    --bg-nav-color: black;
     --bg-code: green;
     --bg-live: red;
   }
 
  header h1 a{
    font-size: 0.9em;
-   color: var(--color-shade);
+   color: var(--default-color);
    text-decoration: none;
  }
   section{
@@ -49,7 +49,7 @@
   width: 20px;
   height: 3px;
   margin: 2px;
-  background: var(--bg-main);
+  background: var(--default-color);
 }
 #cross:hover{
   transform: translate(2px)
@@ -84,12 +84,11 @@ nav{
   list-style-type: none;
   margin: 0.3em;
   padding: 0.5em;
-  color: var(--color-shade);
 }
 
 nav ul li a{
   text-decoration: none;
-  color: var(--bg-main);
+  color: var(--default-color);
 }
 nav ul li a:visited{
   text-decoration: none;
@@ -180,6 +179,7 @@ nav ul li a:visited{
   flex-direction: row;
   gap: 1em;
 }
+
   #name{
   font-family:DM Sans;
   font-size: 1em;
@@ -229,14 +229,12 @@ width: 60vw;
 .fa-github{
   color: black;
 }
-.fa-twitter{
-  color: lightseagreen;
-}
+
 .fa-codepen{
   color: black;
 }
 .fa-linkedin{
-  color: darkblue;
+  color: blue;
 }
 .icons{
   width: 3em;

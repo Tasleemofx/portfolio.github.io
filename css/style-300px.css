@@ -328,6 +328,6 @@ option{
 footer{
   text-align: center;
   background: var(--bg-nav-color);
-  color:var(--bg-main);
+  color:var(--default-color);
   padding: 1em;
 }

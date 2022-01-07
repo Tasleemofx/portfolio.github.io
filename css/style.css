@@ -136,7 +136,5 @@ main{
   transform: translateY(-1em);
 
 }
-footer{
-  color:var(--bg-main)
-}
+
 }

@@ -14,7 +14,7 @@ const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 const themeIcon = document.querySelector('#theme-icon');
 const bodyclass = document.querySelector('.go');
-
+const homebg= document.querySelector('#Home')
 // light mode and dark mode
 
 themeIcon.addEventListener("click",()=>{

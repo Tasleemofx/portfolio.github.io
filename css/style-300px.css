@@ -143,20 +143,20 @@ nav ul li a:visited{
  
   @keyframes sections {
     0%{
-      color: black;
+      transform: scale(0);
     }
     25%{
-      color: blue;
+      transform: scale(0.3)
     }
     50%{
-      color: green;
+      transform: scale(0.7);
     }
     100%{
-      color: inherit;
+      transform: scale(1)
   }
 }
  #Home{
-   animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
+   animation: sections 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   }
 
 
@@ -171,8 +171,8 @@ nav ul li a:visited{
   height: 50vh;
   padding: 1em 0;
   margin: 0;
-  background: url('../images/coffee-unsplash.jpg');
-  background-size: contain;
+  background: url('../images/coffee-unsplash.jpg') no-repeat;
+  background-size:contain;
 }
  #icons{
   display: flex;
@@ -248,16 +248,18 @@ width: 60vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-#skills select{
+#Skills select{
   width: min-content;
   padding: 1em;
 }
 label, select{
   align-self: center;
-  max-width: 20vw;
+  max-width: 20vw; 
+}
+#Projects option{
   background-color: var(--bg-main);
   color:var(--default-color)
-}
+} 
 #Projects{
   display: flex;
   flex-direction: column;
@@ -293,8 +295,12 @@ label, select{
   margin: 0.5em auto;
   padding: 1em;
   width: 60vw;
-  box-shadow: 0 0.2em 0.4em 0 var(--inset), 0 0.3em 0.8em 0 var(--inset);
+  box-shadow: 0.2em 0.1em 0.4em 0.1em var(--inset);
   border-radius: 0.9em;
+  text-align: center;
+}
+.project h3{
+  margin: 15px auto;
 }
 .project img{
   width: 50vw;
@@ -305,6 +311,7 @@ option{
   color: var(--color-shade)
 }
 .code{
+  margin: 15px 1px;
   padding: 5px;
   color: white;
   background-color: var(--bg-code);
@@ -314,6 +321,7 @@ option{
   cursor: pointer;
 }
 .live{
+  margin: 15px 1px;
   padding: 5px;
   color: white;
   background-color: var(--bg-live);

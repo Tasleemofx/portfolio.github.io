@@ -5,7 +5,7 @@
 
   #Home{
   display: flex;
-  height: 70vh;
+  height: 80vh;
   padding: 1px;
  }
 #name{
@@ -53,7 +53,12 @@ nav{
   align-items: center;
 }
 .project{
-  margin: 1em;
+  margin: 1em auto;
+  width: 48vw;
+}
+.project img{
+  width: 40vw;
+  height: 50vh;
 }
 
 }

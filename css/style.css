@@ -94,16 +94,21 @@ main{
 .fa-node{
   color: green
 }
-
+#Projects{
+  display: flex;
+  flex-direction: column;
+}
 
 #Projects-only{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 1em auto;
+  gap: 2em;
 }
 .project{
   padding: 1em;
   width: 30vw;
+  height: 40vw;
   text-align: center;
 }
 

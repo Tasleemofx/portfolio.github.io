@@ -76,6 +76,7 @@ main{
 #profile{
   line-height: 2em;
 }
+
 #Skills ul{
   display: grid;
   grid-template-columns: repeat(5,1fr);

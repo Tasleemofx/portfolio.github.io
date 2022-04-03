@@ -1,13 +1,26 @@
   :root{
-      --bg-main: white;
-      --default-color: black;
-      --color-anim: blue;
-      --color-shade: white;
-      --inset: rgba(0, 0, 0, 0.2);
-      --bg-group: lightseagreen;
-      --bg-nav-color: white;
-      --bg-code: green;
-      --bg-live: red;
+    --bg-main: #000;
+    --default-color: #e6e6ff;
+    --color-anim: yellow;
+    --color-shade: black;
+    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
+    --inset: white;
+    --bg-nav-color: black;
+    --bg-code: green;
+    --bg-live: red;
+  }
+
+  .bodyclass {
+  
+    --bg-main: white;
+    --default-color: black;
+    --color-anim: blue;
+    --color-shade: white;
+    --inset: rgba(0, 0, 0);
+    --bg-group: lightseagreen;
+    --bg-nav-color: white;
+    --bg-code: green;
+    --bg-live: red;
   }
   *{
     padding: 0;
@@ -20,18 +33,7 @@
     color: var(--default-color)
   }
 
-  .bodyclass{
-    --bg-main: #000;
-    --default-color: #e6e6ff;
-    --color-anim: yellow;
-    --color-shade: black;
-    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
-    --inset: white;
-    --bg-nav-color: black;
-    --bg-code: green;
-    --bg-live: red;
-  }
-
+  
  header h1 a{
    font-size: 0.9em;
    color: var(--default-color);
@@ -227,7 +229,7 @@ width: 60vw;
   color: #ff6633;
 }
 .fa-github{
-  color: black;
+  color: var(--inset)
 }
 
 .fa-codepen{

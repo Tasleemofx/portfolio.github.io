@@ -156,7 +156,7 @@ nav ul li a:visited{
   }
 }
  #Home{
-   animation: sections 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
+   animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   }
 
 

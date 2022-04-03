@@ -61,7 +61,6 @@ main{
   #Home{
   display: flex;
   height: 100vh;
-   background-size: cover;
   }
 #name{
   font-family:DM Sans;

@@ -13,7 +13,7 @@ const react = document.querySelectorAll('.react')
 const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
 const themeIcon = document.querySelector('#theme-icon');
-const bodyclass = document.querySelector('.bodyclass');
+const bodyclass = document.querySelector('body');
 const homebg= document.querySelector('#Home')
 // light mode and dark mode
 

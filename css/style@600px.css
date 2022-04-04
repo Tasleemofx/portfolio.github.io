@@ -8,6 +8,7 @@
   height: 80vh;
   padding: 1px;
   background-size: 100vw;
+  gap: 3em;
  }
 #name{
   font-family:DM Sans;
@@ -35,6 +36,12 @@ nav{
    height: max-content;
 }
 
+.fa-codepen {
+  color: var(--color-shade);
+}
+.fa-linkedin {
+  color: var(--color-shade);
+}
 
 #Projects{
   margin: 1em auto;

@@ -20,10 +20,10 @@ const homebg= document.querySelector('#Home')
 themeIcon.addEventListener("click",()=>{
     if (themeIcon.src === "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"){
         themeIcon.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        bodyclass.classList.add('bodyclass')
+        bodyclass.classList.toggle('bodyclass')
     }else{
         themeIcon.src = "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"
-        bodyclass.classList.remove('bodyclass')
+        bodyclass.classList.toggle('bodyclass')
 }
 })
 //scroll reveal

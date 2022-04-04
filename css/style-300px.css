@@ -1,6 +1,6 @@
   :root{
     --bg-main: #000;
-    --default-color: #e6e6ff;
+    --default-color: white;
     --color-anim: yellow;
     --color-shade: black;
     --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
@@ -159,11 +159,6 @@ nav ul li a:visited{
 }
  #Home{
    animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
-  }
-
-
-
-  #Home{
   color:black;
   display: flex;
   flex-direction: column-reverse;
@@ -229,14 +224,15 @@ width: 60vw;
   color: #ff6633;
 }
 .fa-github{
-  color: var(--inset)
+  background-color: var(--inset);
+  color:var(--bg-main)
 }
 
 .fa-codepen{
-  color: black;
+  color: var(--inset);
 }
 .fa-linkedin{
-  color: blue;
+  color: var(--inset);
 }
 .icons{
   width: 3em;
@@ -248,7 +244,7 @@ width: 60vw;
 }
 #Skills ul{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 #Skills select{
   width: min-content;

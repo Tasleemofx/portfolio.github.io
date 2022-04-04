@@ -32,7 +32,6 @@ nav ul li:hover{
 }
 nav ul li a{
   text-decoration: none;
-  /* color: var(--bg-main); */
   border-bottom: none;
   cursor: pointer;
 
@@ -60,7 +59,8 @@ main{
 }
   #Home{
   display: flex;
-  height: 100vh;
+  height: 70vh;
+  gap: 5em;
   }
 #name{
   font-family:DM Sans;

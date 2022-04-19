@@ -240,7 +240,7 @@ width: 60vw;
 }
 #Skills ul li{
   list-style-type: none;
-  padding: 1.5em;
+  padding: 1em;
 }
 #Skills ul{
   display: grid;

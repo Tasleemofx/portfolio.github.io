@@ -1,0 +1,40 @@
+@import './variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+}
+.navbar{
+    background-color: $black;
+    height: 6em;
+    color: $white;
+    display: flex;
+    width: 30vw;
+    #theme-icon{
+        width: 3em;
+        height: 2em;
+    }
+    .d1, .d2, .d3{
+        background-color: $white;
+        width: 0.6em;
+        height: 0.5em;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+    }
+    .d1 .change{
+        transform: rotateX(45deg);
+    }
+    .d2 .change{
+        display: hidden;
+    }
+    .d3 .change{
+        transform: rotateY(45deg);
+    }
+    ul
+}

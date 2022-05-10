@@ -36,11 +36,14 @@ ScrollReveal().reveal('.project', { delay: 250 })
 burger.addEventListener("click",()=>{
     showlist.classList.toggle('show-300')
     showlist.classList.toggle('hidden')
+    bar1.classList.toggle('change')
+    bar2.classList.toggle('change')
+    bar3.classList.toggle('change')
 })
-cross.addEventListener('click',()=>{
-    showlist.classList.toggle('show-300')
-    showlist.classList.toggle('hidden')
-})
+// cross.addEventListener('click',()=>{
+//     showlist.classList.toggle('show-300')
+//     showlist.classList.toggle('hidden')
+// })
 const navUl = document.querySelectorAll('nav ul li');
 navUl.forEach((listItem)=>{
     listItem.addEventListener('click',()=>{

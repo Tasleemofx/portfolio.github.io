@@ -1,7 +1,7 @@
 // declarations
 const burger = document.querySelector('#burger');
 const cross = document.querySelector('#cross')
-const showlist = document.querySelector('nav ul');
+const showlist = document.querySelector('.navlist');
 const bar1 = document.querySelector('.d1');
 const bar2 = document.querySelector('.d2');
 const bar3 = document.querySelector('.d3')

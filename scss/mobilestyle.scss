@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .container{
@@ -19,16 +20,18 @@
 }
 .navbar{
     background-color: $black;
-    height: 6em;
+    height: 4em;
     color: $white;
-    width: 100vw;
+    width: 83vw;
+    position: sticky;
+    top: 0;
     
     .top-flex{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 1.8em;
-
+        padding: 1em;
+        
         .logo{
             h1 {
                 font-size: 900;
@@ -80,35 +83,96 @@
         position: absolute;
         top: 2;
         right: 5;
-        animation: rotator 2s forwards 0.5s;
+        animation: rotator 0.4s forwards 0.2s;
     }
     .d2.change{
         display: none;
     }
     .d3.change{
-        animation: Inverserotator 2s forwards 0.5s;
+        animation: Inverserotator 0.4s forwards 0.2s;
+        
     }
-    ul li{
-        list-style-type: none;
-        padding: 1em;
-         a{
+    
+     a{
         text-decoration: none;
-        color: $white
+        color: $white;
     }
-}
+
     .show-300{
-        display: block;
         background-color: $black;
         width: 40vw;
-        height: 35vh;
+        height: 30vh;
         position: absolute;
+        top:1;
         right: 0;
-        top: 3;
+        .nav_link{
+            display: block;
+            padding: 1em;
+        }
+    }
+}
+.hidden{
+    display: none;
+}
+
+#Home{
+    width: 83vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/coffee-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    .icons a i{
+        margin: 0.3em;
+        }
+        .fa-github, .fa-codepen {
+        color: $black;
+    }
+        .fa-linkedin{
+            color: $blue
+        }
+    .article{
+        .description{
+            #name{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 2em;
+                font-weight: 200;
+                // margin: 0.5em;
+            }
+            #titler  {
+                font-size: 1em;
+            }
+        }
+            .cv-btn {
+            background-color: $black;
+            color: $white;
+            padding: 1em;
+            border-radius: 9px;
+            }
     }
 }
 
-.hidden{
-    display: none;
+
+//Skills
+
+
+//Projects
+#Projects{
+    #select{
+        text-align: center;
+    }
+    .project{
+        margin: 5px auto;
+        width: 60vw;
+        img{
+            width: 50vw;
+            height: 40vh;
+        }
+        
+    }
 }
 
 

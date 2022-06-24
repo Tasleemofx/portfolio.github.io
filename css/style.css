@@ -84,6 +84,7 @@ main{
 .icons{
   width: 5em;
   height: 5em;
+  flex-direction: row;
 }
 .fa-html5{
   color: darksalmon;
@@ -108,7 +109,7 @@ main{
 .project{
   padding: 1em;
   width: 30vw;
-  height: 40vw;
+  height: max-content;
   text-align: center;
 }
 

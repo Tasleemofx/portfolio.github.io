@@ -5,6 +5,7 @@
 
   #Home{
   display: flex;
+  flex-direction: column-reverse;
   height: 80vh;
   padding: 1px;
   background-size: 100vw;
@@ -20,8 +21,8 @@
   font-size: 1.5em;
 }
   #icons{
-  display: flex;
-  gap: 3em;
+  flex-direction: row;
+  gap: 2em;
   margin: 0 0 20px 0;
 }
 
@@ -40,7 +41,7 @@ nav{
   color: var(--color-shade);
 }
 .fa-linkedin {
-  color: var(--color-shade);
+  color: var(--color-anim);
 }
 
 #Projects{
@@ -55,7 +56,7 @@ nav{
 }
 .project img{
   width: 40vw;
-  height: 40vh;
+  height: 30vh;
 }
 #select {
   text-align: center;

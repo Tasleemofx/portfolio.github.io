@@ -1,7 +1,8 @@
   :root{
     --bg-main: #000;
     --default-color: white;
-    --color-anim: yellow;
+    /* --color-anim: yellow; */
+    --color-anim: blue;
     --color-shade: black;
     --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
     --inset: white;
@@ -161,20 +162,20 @@ nav ul li a:visited{
    animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   color:black;
   display: flex;
-  flex-direction: column-reverse;
-  gap: 5em;
+  flex-direction: row;
+  gap: 2em;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
   padding: 1em 0;
   margin: 0;
-  background: url('../images/coffee-unsplash.jpg') no-repeat;
-  background-size:contain;
+  background: url('../images/coffee-unsplash.jpg') no-repeat ;
+  background-size:cover;
 }
  #icons{
   display: flex;
-  flex-direction: row;
-  gap: 1em;
+  flex-direction:column;
+  gap: 0.8em;
 }
 
   #name{
@@ -183,9 +184,10 @@ nav ul li a:visited{
   font-weight: bolder;
 }
 .cv-btn{
-  padding: 1em;
-  background-color: var(--default-color);
-  color: var(--bg-main);
+  padding: 0.5em;
+  margin: 0.5rem;
+  background-color: black;
+  color: white;
   border-radius: 0.8em;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -207,9 +209,13 @@ width: 60vw;
 .fa-css3-alt{
   color: rgb(30, 141, 192);
 }
+/* .fa-sass{
+  color: white;
+} */
+
 .fa-js{
-  color: yellow;
-  background-color: black;
+  color: var(--color-anim);
+  background-color: white;
 }
  .fa-bootstrap{
   color: blue;
@@ -224,15 +230,18 @@ width: 60vw;
   color: #ff6633;
 }
 .fa-github{
-  background-color: var(--inset);
-  color:var(--bg-main)
+  color: var(--inset);
+  /* color:var(--bg-main) */
+}
+.g-dark{
+  color: var(--bg-main);
 }
 
 .fa-codepen{
-  color: var(--inset);
+  color: var(--bg-main);
 }
 .fa-linkedin{
-  color: var(--inset);
+  color: var(--color-anim);
 }
 .icons{
   width: 3em;
@@ -246,17 +255,16 @@ width: 60vw;
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
-#Skills select{
-  width: min-content;
-  padding: 1em;
+#Projects select{
+  text-align: center;
+  padding: 0.3em;
+  border-radius: 5px;
 }
-label, select{
-  align-self: center;
-  max-width: 20vw; 
-}
+
 #Projects option{
   background-color: var(--bg-main);
-  color:var(--default-color)
+  color:var(--default-color);
+
 } 
 #Projects{
   display: flex;

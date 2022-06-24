@@ -45,7 +45,7 @@ nav ul li a:visited{
 }
 
 nav ul li a:hover{
-  color: yellow;
+  color: var(--default-color);
   font-size: larger;
 }
 main{

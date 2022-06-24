@@ -1,7 +1,6 @@
   :root{
     --bg-main: #000;
     --default-color: white;
-    /* --color-anim: yellow; */
     --color-anim: blue;
     --color-shade: black;
     --bg-group: radial-gradient(#e6e6ff, #b3b3ff);

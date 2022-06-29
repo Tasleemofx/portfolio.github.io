@@ -208,9 +208,7 @@ width: 60vw;
 .fa-css3-alt{
   color: rgb(30, 141, 192);
 }
-/* .fa-sass{
-  color: white;
-} */
+
 
 .fa-js{
   color: var(--color-anim);
@@ -233,12 +231,10 @@ width: 60vw;
   /* color:var(--bg-main) */
 }
 .g-dark{
-  color: var(--bg-main);
+  color: black;
 }
 
-.fa-codepen{
-  color: var(--bg-main);
-}
+
 .fa-linkedin{
   color: var(--color-anim);
 }

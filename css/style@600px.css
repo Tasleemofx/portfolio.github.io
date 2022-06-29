@@ -37,9 +37,7 @@ nav{
    height: max-content;
 }
 
-.fa-codepen {
-  color: var(--color-shade);
-}
+
 .fa-linkedin {
   color: var(--color-anim);
 }

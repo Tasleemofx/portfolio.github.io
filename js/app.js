@@ -12,20 +12,17 @@ const js = document.querySelectorAll(".js")
 const react = document.querySelectorAll('.react')
 const node = document.querySelectorAll('.node')
 let projectdiv = document.querySelector("#Projects-only")
-const themeIcon = document.querySelector('#theme-icon');
+const toggletheme = document.querySelector('.toggle');
+const indicator = document.querySelector(' .indicator');
 const bodyclass = document.querySelector('body');
 const homebg= document.querySelector('#Home')
 // light mode and dark mode
 
-themeIcon.addEventListener("click",()=>{
-    if (themeIcon.src === "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"){
-        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        bodyclass.classList.toggle('bodyclass')
-    }else{
-        themeIcon.src = "https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png"
-        bodyclass.classList.toggle('bodyclass')
-}
+toggletheme.addEventListener("click",()=>{
+    indicator.classList.toggle("active")
+    bodyclass.classList.toggle("bodyclass")
 })
+
 //scroll reveal
 ScrollReveal().reveal('#Home',{ delay: 250})
 ScrollReveal().reveal('#Skills', { delay: 250 })

@@ -1,17 +1,4 @@
   :root{
-    --bg-main: #000;
-    --default-color: white;
-    --color-anim: blue;
-    --color-shade: black;
-    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
-    --inset: white;
-    --bg-nav-color: black;
-    --bg-code: green;
-    --bg-live: red;
-  }
-
-  .bodyclass {
-  
     --bg-main: white;
     --default-color: black;
     --color-anim: blue;
@@ -21,6 +8,18 @@
     --bg-nav-color: white;
     --bg-code: green;
     --bg-live: red;
+  }
+
+  .bodyclass {
+    --bg-main: #000;
+    --default-color: white;
+    --color-anim: blue;
+    --color-shade: black;
+    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
+    --inset: white;
+    --bg-nav-color: black;
+    --bg-code: green;
+    --bg-live: red;    
   }
   *{
     padding: 0;
@@ -78,9 +77,39 @@ nav{
   top: 0;
   width: 100vw;
 }
-#theme-icon{
-  width: 1.7em;
-  height: 1.4em;
+#themes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.toggle{
+  width: 60px;
+  height: 30px;
+  background: var(--default-color);
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.indicator{
+  width: 30px;
+  height: 30px;
+  background: var(--bg-main);
+  position: absolute;
+  left: 0;
+  transform: scale(0.8);
+  border-radius: 20px;
+}
+.active{
+  width: 30px;
+  height: 30px;
+  background: var(--bg-main);
+  position: absolute;
+  left: 30px;
+}
+.theme-icon{
+  width: 1.5em;
+  height: 1.5em;
 }
   nav ul li{
   list-style-type: none;
@@ -144,21 +173,17 @@ nav ul li a:visited{
   }
  
   @keyframes sections {
-    0%{
-      transform: scale(0);
-    }
+   
     25%{
-      transform: scale(0.3)
+      transform: scale(0.6)
     }
-    50%{
-      transform: scale(0.7);
-    }
+   
     100%{
       transform: scale(1)
   }
 }
  #Home{
-   animation: sections 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
+   animation: sections .5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   color:black;
   display: flex;
   flex-direction: row;
@@ -277,8 +302,7 @@ width: 60vw;
 .hide{
   display: none;
 }
-
-@keyframes hider {
+ @keyframes hider {
   0%{
     opacity: 1;
   }
@@ -291,11 +315,11 @@ width: 60vw;
   100%{
     opacity: 0;
   }
-}
+} 
 .project{
   margin: 0.5em auto;
   padding: 1em;
-  width: 60vw;
+  width: 50vw;
   box-shadow: 0.2em 0.1em 0.4em 0.1em var(--inset);
   border-radius: 0.9em;
   text-align: center;
@@ -304,8 +328,8 @@ width: 60vw;
   margin: 15px auto;
 }
 .project img{
-  width: 50vw;
-  height: 50vh;
+  width: 40vw;
+  height: 40vh;
 }
 option{
   background-color: var(--bg-nav-color);

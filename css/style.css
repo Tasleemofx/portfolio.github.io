@@ -102,7 +102,7 @@ main{
 
 #Projects-only{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 1em auto;
   gap: 2em;
 }

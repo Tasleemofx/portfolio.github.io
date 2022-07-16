@@ -6,7 +6,7 @@
   #Home{
   display: flex;
   flex-direction: column-reverse;
-  height: 80vh;
+  height: 50vh;
   padding: 1px;
   background-size: 100vw;
   gap: 3em;
@@ -46,14 +46,16 @@ nav{
   margin: 1em auto;
 }
 #Projects-only{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .project{
   margin: 1em auto;
-  width: 48vw;
+  width: 44vw;
 }
 .project img{
-  width: 40vw;
+  width: 34vw;
   height: 30vh;
 }
 #select {

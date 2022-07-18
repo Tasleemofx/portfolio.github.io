@@ -253,7 +253,6 @@ width: 60vw;
 }
 .fa-github{
   color: var(--inset);
-  /* color:var(--bg-main) */
 }
 .g-dark{
   color: black;
@@ -264,12 +263,12 @@ width: 60vw;
   color: var(--color-anim);
 }
 .icons{
-  width: 3em;
-  height: 4em;
+  width: 2.5em;
+  height: 3.5em;
 }
 #Skills ul li{
   list-style-type: none;
-  padding: 1em;
+  padding: 0.5em;
 }
 #Skills ul{
   display: grid;
@@ -319,7 +318,7 @@ width: 60vw;
 .project{
   margin: 0.5em auto;
   padding: 1em;
-  width: 50vw;
+  width: 60vw;
   box-shadow: 0.2em 0.1em 0.4em 0.1em var(--inset);
   border-radius: 0.9em;
   text-align: center;

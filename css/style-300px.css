@@ -1,13 +1,25 @@
   :root{
-      --bg-main: white;
-      --default-color: black;
-      --color-anim: blue;
-      --color-shade: white;
-      --inset: rgba(0, 0, 0, 0.2);
-      --bg-group: lightseagreen;
-      --bg-nav-color: black;
-      --bg-code: green;
-      --bg-live: red;
+    --bg-main: white;
+    --default-color: black;
+    --color-anim: blue;
+    --color-shade: white;
+    --inset: rgba(0, 0, 0);
+    --bg-group: lightseagreen;
+    --bg-nav-color: white;
+    --bg-code: green;
+    --bg-live: red;
+  }
+
+  .bodyclass {
+    --bg-main: #000;
+    --default-color: white;
+    --color-anim: blue;
+    --color-shade: black;
+    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
+    --inset: white;
+    --bg-nav-color: black;
+    --bg-code: green;
+    --bg-live: red;    
   }
   *{
     padding: 0;
@@ -20,21 +32,10 @@
     color: var(--default-color)
   }
 
-  .bodyclass{
-    --bg-main: #000;
-    --default-color: #e6e6ff;
-    --color-anim: yellow;
-    --color-shade: black;
-    --bg-group: radial-gradient(#e6e6ff, #b3b3ff);
-    --inset: white;
-    --bg-nav-color: white;
-    --bg-code: green;
-    --bg-live: red;
-  }
-
+  
  header h1 a{
    font-size: 0.9em;
-   color: var(--color-shade);
+   color: var(--default-color);
    text-decoration: none;
  }
   section{
@@ -49,7 +50,7 @@
   width: 20px;
   height: 3px;
   margin: 2px;
-  background: var(--bg-main);
+  background: var(--default-color);
 }
 #cross:hover{
   transform: translate(2px)
@@ -76,20 +77,49 @@ nav{
   top: 0;
   width: 100vw;
 }
-#theme-icon{
-  width: 1.7em;
-  height: 1.4em;
+#themes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.toggle{
+  width: 60px;
+  height: 30px;
+  background: var(--default-color);
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.indicator{
+  width: 30px;
+  height: 30px;
+  background: var(--bg-main);
+  position: absolute;
+  left: 0;
+  transform: scale(0.8);
+  border-radius: 20px;
+}
+.active{
+  width: 30px;
+  height: 30px;
+  background: var(--bg-main);
+  position: absolute;
+  left: 30px;
+}
+.theme-icon{
+  width: 1.5em;
+  height: 1.5em;
 }
   nav ul li{
   list-style-type: none;
   margin: 0.3em;
   padding: 0.5em;
-  color: var(--color-shade);
 }
 
 nav ul li a{
   text-decoration: none;
-  color: var(--bg-main);
+  color: var(--default-color);
 }
 nav ul li a:visited{
   text-decoration: none;
@@ -141,67 +171,47 @@ nav ul li a:visited{
       opacity: 1;
     }
   }
-  @keyframes easerOut {
-    from{
-      display: flex;
-      width: 60%;
-      opacity: 1;
-    }
-    to{
-      display: none;
-    }
-  }
+ 
   @keyframes sections {
-    0%{
-      background-color: red;
-      color: black;
-    }
+   
     25%{
-      background-color: orange;
-      color: blue;
+      transform: scale(0.6)
     }
-    50%{
-      background-color: yellow;
-      color: green;
-    }
+   
     100%{
-      background-color: inherit;
-      color: inherit;
+      transform: scale(1)
   }
 }
-  section{
-   animation: sections 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
-  }
-
-
-
-  #Home{
+ #Home{
+   animation: sections .5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s 1;
   color:black;
   display: flex;
-  flex-direction: column-reverse;
-  gap: 5em;
+  flex-direction: row;
+  gap: 2em;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
   padding: 1em 0;
   margin: 0;
-  background: url('../images/coffee-unsplash.jpg');
-  background-size: cover;
+  background: url('../images/coffee-unsplash.jpg') no-repeat ;
+  background-size:cover;
 }
  #icons{
   display: flex;
-  flex-direction: row;
-  gap: 1em;
+  flex-direction:column;
+  gap: 0.8em;
 }
+
   #name{
   font-family:DM Sans;
   font-size: 1em;
   font-weight: bolder;
 }
 .cv-btn{
-  padding: 1em;
-  background-color: var(--default-color);
-  color: var(--bg-main);
+  padding: 0.5em;
+  margin: 0.5rem;
+  background-color: black;
+  color: white;
   border-radius: 0.8em;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -223,9 +233,11 @@ width: 60vw;
 .fa-css3-alt{
   color: rgb(30, 141, 192);
 }
+
+
 .fa-js{
-  color: yellow;
-  background-color: black;
+  color: var(--color-anim);
+  background-color: white;
 }
  .fa-bootstrap{
   color: blue;
@@ -240,39 +252,39 @@ width: 60vw;
   color: #ff6633;
 }
 .fa-github{
+  color: var(--inset);
+}
+.g-dark{
   color: black;
 }
-.fa-twitter{
-  color: lightseagreen;
-}
-.fa-codepen{
-  color: black;
-}
+
+
 .fa-linkedin{
-  color: darkblue;
+  color: var(--color-anim);
 }
 .icons{
-  width: 3em;
-  height: 4em;
+  width: 2.5em;
+  height: 3.5em;
 }
 #Skills ul li{
   list-style-type: none;
-  padding: 1.5em;
+  padding: 0.5em;
 }
 #Skills ul{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
 }
-#skills select{
-  width: min-content;
-  padding: 1em;
+#Projects select{
+  text-align: center;
+  padding: 0.3em;
+  border-radius: 5px;
 }
-label, select{
-  align-self: center;
-  max-width: 20vw;
+
+#Projects option{
   background-color: var(--bg-main);
-  color:var(--default-color)
-}
+  color:var(--default-color);
+
+} 
 #Projects{
   display: flex;
   flex-direction: column;
@@ -289,8 +301,7 @@ label, select{
 .hide{
   display: none;
 }
-
-@keyframes hider {
+ @keyframes hider {
   0%{
     opacity: 1;
   }
@@ -303,23 +314,28 @@ label, select{
   100%{
     opacity: 0;
   }
-}
+} 
 .project{
   margin: 0.5em auto;
   padding: 1em;
   width: 60vw;
-  box-shadow: 0 0.2em 0.4em 0 var(--inset), 0 0.3em 0.8em 0 var(--inset);
+  box-shadow: 0.2em 0.1em 0.4em 0.1em var(--inset);
   border-radius: 0.9em;
+  text-align: center;
+}
+.project h3{
+  margin: 15px auto;
 }
 .project img{
-  width: 50vw;
-  height: 50vh;
+  width: 40vw;
+  height: 40vh;
 }
 option{
   background-color: var(--bg-nav-color);
   color: var(--color-shade)
 }
 .code{
+  margin: 15px 1px;
   padding: 5px;
   color: white;
   background-color: var(--bg-code);
@@ -329,6 +345,7 @@ option{
   cursor: pointer;
 }
 .live{
+  margin: 15px 1px;
   padding: 5px;
   color: white;
   background-color: var(--bg-live);
@@ -343,6 +360,6 @@ option{
 footer{
   text-align: center;
   background: var(--bg-nav-color);
-  color:var(--bg-main);
+  color:var(--default-color);
   padding: 1em;
 }

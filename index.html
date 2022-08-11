@@ -12,20 +12,27 @@
     <script src="https://unpkg.com/scrollreveal"></script>
      <script defer src="js/app.js"></script>
   </head>
-  <body class="go">
+  <body>
 
     <div class="container">
 
         <nav class="navbar">
           <div class="top-flex">
             <header class="logo">
-              <h1><a href="#">Tasleemofx</a></h1>
+              <h1><a href="#">Tesleemofx</a></h1>
             </header>
-            <img src="https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png" id="theme-icon" alt="icons" />
+            <div id="themes">
+              <img src="https://cdn-icons-png.flaticon.com/512/169/169367.png" class="theme-icon" alt="light mode" />
+              <div class="toggle">
+                <i class="indicator"></i>
+              </div>
+              <img src="https://icons.veryicon.com/png/o/weather/color-weather/moon-21.png" 
+              class="theme-icon" alt="dark mode" />
+            </div>
             <div id="burger">
-              <div class="d1 "></div>
-              <div class="d2 "></div>
-              <div class="d3 "></div>
+              <div class="d1"></div>
+              <div class="d2"></div>
+              <div class="d3"></div>
             </div>
           </div>
           
@@ -33,7 +40,7 @@
             <div>
               <li><a href="#Home" class="nav_link">Home</a></li>
               <li><a href="#Skills" class="nav-link">Skills</a></li>
-              <li><a href="#Projects" class="nav-link">Project</a></li>
+              <li><a href="#Projects" class="nav-link">Projects</a></li>
               <li><a href="#Contact" class="nav-link">Contact</a></li>
             </div>
             
@@ -45,63 +52,65 @@
           
       </nav>
       <main>
-        <section id="Home">
+        <section id="Home" >
           <div id="icons">
+
             <a href="https://github.com/tasleemofx" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://twitter.com/tasleemofx" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="https://codepen.io/tesleemcodes" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/tesleemoladepo" target="_blank">
+
+            <a href="https://github.com/tasleemofx" target="_blank"><i class="fab fa-github g-dark fa-2x"></i></a>
+
               <i class="fab fa-linkedin fa-2x"></i>
             </a>
+            <a href="https://codepen.io/tesleemcodes" target="_blank"><i class="fab fa-codepen g-dark fa-2x"></i></a>
           </div>
           <article class="article">
             <p id="description">
               <span id="name">Hi, I'm Tesleem </span>
             <br/><span id="titler"> A front-End Developer</span>.<br/>
             </p>
-            <a href="https://drive.google.com/file/d/1AjrJ0YKFrG413eQOxEGSkb8bGLAfbjel/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1AjrJ0YKFrG413eQOxEGSkb8bGLAfbjel/view?usp=sharing" download>
               <button class="cv-btn">Download CV</button>
             </a>
           </article>
-          
-
-
-
         </section>
 
-         
-        <section id="Skills">
+         <section id="Skills">
           <h3>Core Skills</h3>
              <ul>
               <li>HTML<br/>
-                <i class="fab fa-html5 fa-5x"></i>
+                <i class="fab fa-html5 fa-3x"></i>
               </li>
               <li>CSS<br/>
-                <i class="fab fa-css3-alt fa-5x"></i></li>
+                <i class="fab fa-css3-alt fa-3x"></i>
+              </li>
+              <li>SASS/SCSS <br/>
+              <i class="fa-brands fa-sass fa-3x"></i>
+              </li>
               <li>Javascript<br/>
-                <i class="fab fa-js fa-5x"></i></li>
+                <i class="fab fa-js fa-3x"></i></li>
               <li>React <br/>
-              <i class="fab fa-react fa-5x"></i></li>
+              <i class="fab fa-react fa-3x"></i></li>
               <li>Next.js<br/>
               <img src="data:image/png;base64,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" alt="nextjs" class="icons">
               </li>
               <li>Bootstrap<br/>
-              <i class="fab fa-bootstrap fa-5x"></i></li>
+              <i class="fab fa-bootstrap fa-3x"></i></li>
               <li>Node (express.js)<br/>
-                <i class="fab fa-node fa-5x"></i></li>
+                <i class="fab fa-node fa-3x"></i></li>
               <li>Mongo DB<br/>
               <img src="data:image/jpeg;base64,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"
               alt="mongo" class="icons"/>
               </li>
               <li>Git<br />
-                <i class="fab fa-git-alt fa-5x"></i>
+                <i class="fab fa-git-alt fa-3x"></i>
               </li>
               <li>Github<br />
-                <i class="fab fa-github fa-5x"></i>
+                <i class="fab fa-github fa-3x"></i>
               </li>
             </ul>
         </section>
-
 
         <section id="Projects">
           <div id="select">
@@ -111,11 +120,37 @@
               <option value="html"><a href="#Projects" class="nav-link">HTML & CSS only</a></option>
               <option value="js">Javascript</option>
               <option value="react">React</option>
-              <option value="node">React and Node</option>
+              <option value="node">Node.js</option>
             </select>
           </div>
           <div id="Projects-only">
             
+            <div class="project html-css">
+              <img src="images/ecommerce.png" alt="ecommerce"/>
+              <h3>Ecommerce website</h3>
+            
+              <p>
+                A full ecommerce website made with fakestore api, complete with
+                flutterwave card checkout
+              </p>
+              <h4>Skills used</h4>
+              <p>
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-bootstrap fa-2x"></i>
+                <i class="fab fa-react fa-2x"></i>
+                <i class="fab fa-git-alt fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+                
+              </p>
+              <a href="https://github.com/Tasleemofx/ecommercefsapi" target="_blank">
+                <button class="code">Code on Github</button>
+              </a>
+              <a href="https://ecommercefsapi.vercel.app/" target="_blank">
+                <button class="live">Live site</button>
+              </a>
+            </div>
+
             <div class="project react">
               <img src="images/applenbanana.png" alt="apple" />
               <h3>Apple and Banana website</h3>
@@ -139,6 +174,85 @@
                 <button class="live">Live site</button>
               </a>
             </div>
+
+            
+              <div class="project node">
+                <img src="images/webscraper-api.png" alt="web scraper api" />
+                <h3>Crypto News API</h3>
+            
+                <p>
+                  An API built with node.js for getting up-to-date cryptocurrency News
+                  from the top news sites of the world.
+                </p>
+                <h4>Skills used</h4>
+                <p>
+                  <i class="fab fa-node fa-2x"></i>
+                  <i class="fab fa-js fa-2x"></i>
+                  <i class="fab fa-git-alt fa-2x"></i>
+                  <i class="fab fa-github fa-2x"></i>
+            
+                </p>
+                <a href="https://github.com/Tasleemofx/webscrapper" target="_blank">
+                  <button class="code">Code on Github</button>
+                </a>
+                <a href="http://nodewebscrapper.herokuapp.com/news" target="_blank">
+                  <button class="live">Live site</button>
+                </a>
+              </div>
+              <div class="project react">
+                <img src="images/CryptoUpdates.png" src="crypto" />
+                <h3>
+                  Cryptocurrency News site
+                </h3>
+              
+                <p>
+                  Crypto News Webscraper built using web scraper API made 
+                with node and express.js
+                Gets up to date news from trusted news websites</a>
+              
+                </p>
+                <h4>Skills used</h4>
+                <p>
+                  <i class="fab fa-html5 fa-2x"></i>
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <i class="fab fa-js fa-2x"></i>
+                  <i class="fab fa-react fa-2x"></i>
+                  <i class="fab fa-git-alt fa-2x"></i>
+                  <i class="fab fa-github fa-2x"></i>
+                </p>
+                <a href="https://github.com/Tasleemofx/webscrapperfrontend" target="_blank">
+                  <button class="code">Code on Github</button>
+                </a>
+                <a href="https://webscrapperfrontend.vercel.app/" target="_blank">
+                  <button class="live">Live site</button>
+                </a>
+              </div>
+
+              <div class="project react">
+                <img src="images/admin.png" src="reviews" />
+                <h3>An ecommerce website's admin dashboard</h3>
+              
+                <p>
+                  An admin dashboard react app</a>
+              
+                </p>
+                <h4>Skills used</h4>
+                <p>
+                  <i class="fab fa-html5 fa-2x"></i>
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <i class="fab fa-js fa-2x"></i>
+                  <i class="fab fa-react fa-2x"></i>
+                  <i class="fab fa-git-alt fa-2x"></i>
+                  <i class="fab fa-github fa-2x"></i>
+                </p>
+                <a href="https://github.com/Tasleemofx/admin-dashboard" target="_blank">
+                  <button class="code">Code on Github</button>
+                </a>
+                <a href="http://admin-dashboard-beryl.vercel.app/" target="_blank">
+                  <button class="live">Live site</button>
+                </a>
+              </div>
+
             <div class="project react">
               <img src="images/sneakers.png" alt="sneakers"/>
               <h3>An Ecommerce product page</h3>
@@ -159,6 +273,52 @@
                 <button class="code">Code on Github</button>
               </a>
               <a href="https://sneakers-iota.vercel.app/" target="_blank">
+                <button class="live">Live site</button>
+              </a>
+            </div>
+            <div class="project react">
+              <img src="images/giftlabs.png" alt="sneakers" />
+              <h3>Giftlabs</h3>
+            
+              <p>
+                A gift shop website build with React, Typescript and Sass
+              </p>
+              <h4>Skills used</h4>
+              <p>
+                <i class="fab fa-html5 fa-2x"></i>
+                <!-- <i class="fa-brands fa-sass"></i> -->
+                <i class="fab fa-js fa-2x"></i>
+                <i class="fab fa-react fa-2x"></i>
+                <i class="fab fa-git-alt fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+              </p>
+              <a href="https://github.com/Tasleemofx/giftLabs" target="_blank">
+                <button class="code">Code on Github</button>
+              </a>
+              <a href="https://gift-labs.vercel.app/" target="_blank">
+                <button class="live">Live site</button>
+              </a>
+            </div>
+            <div class="project html-css js">
+              <img src="images/ajocard.png" src="ajo-card" />
+              <h3>Landing page design</h3>
+            
+              <p>
+                AjoCard Landing page</a>
+            
+              </p>
+              <h4>Skills used</h4>
+              <p>
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-js fa-2x"></i>
+                <i class="fab fa-git-alt fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+              </p>
+              <a href="https://github.com/Tasleemofx/ajocard" target="_blank">
+                <button class="code">Code on Github</button>
+              </a>
+              <a href="https://tasleemofx.github.io/ajocard/" target="_blank">
                 <button class="live">Live site</button>
               </a>
             </div>
@@ -208,31 +368,7 @@
                 <button class="live">Live site</button>
               </a>
             </div>
-            
-            <div class="project html-css js">
-              <img src="images/edureka.png" alt="edureka"/>
-              
-              <h3>Edureka scholarship site clone</h3>
-
-              <p>
-                An almost 100% perfect clone of a responsive <a href="https://www.edureka.co/internship/full-stack-web-development" target="_blank">edureka internship website</a>
-
-              </p>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-                <i class="fab fa-js fa-2x"></i>
-                <i class="fab fa-git-alt fa-2x"></i>
-              </p>
-              <a href="https://github.com/Tasleemofx/edureka-clone" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://tasleemofx.github.io/edureka-clone/" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-
-           </div>
+                  
             <div class="project react">
               <img src="images/product.png" src="reviews"/>
               <h3>Product Review navigation</h3>
@@ -257,106 +393,8 @@
                 <button class="live">Live site</button>
               </a>
             </div>
-
-
-            <div class="project html-css">
-              
-                            <h3>Chat app Website</h3>
-              <p>
-                A <a href="frontendmentor.io" target="_blank">front-End mentor</a> challenge
-              </p>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-              </p>
-              <a href="https://github.com/Tasleemofx/chatapp" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://tasleemofx.github.io/chatapp/" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-            </div>
-            <div class="project html-css">
-              
-              <h3>Trombone Landing page</h3>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-              </p>
-              <a href="https://codepen.io/tesleemcodes/pen/zYKrpGz" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://codepen.io/tesleemcodes/pen/zYKrpGz" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-            </div>
-
-
-            <div class="project react node">
-              
-              <h3>A phone book app</h3>
-
-              <p>
-                A react app (deployed on heroku) built on a node.js server able to add, edit and delete contacts from a phonebook
-              </p>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-                <i class="fab fa-js fa-2x"></i>
-                <i class="fab fa-react fa-2x"></i>
-                <i class="fab fa-node fa-2x"></i>
-                <i class="fab fa-git-alt fa-2x"></i>
-                <i class="fab fa-github fa-2x"></i>
-              </p>
-              <a href="https://github.com/Tasleemofx/FSO/tree/ex3.9-3.11" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://desolate-citadel-10384.herokuapp.com/" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-            </div>
-            <div class="project html-css">
-              
-              <h3>App Reviews Landing page</h3>
-              <p>
-                A <a href="frontendmentor.io" target="_blank">frontEnd Mentor</a> landing page challenge
-              </p>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-              </p>
-              <a href="https://github.com/Tasleemofx/Social-proof" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://tasleemofx.github.io/Social-proof/" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-            </div>
-            <div class="project html-css">
-              
-              <h3>Frontendmasters challenge</h3>
-            
-              <p>
-                A <a href="frontendmentor.io" target="_blank">frontEnd Mentor</a> landing page challenge
-              </p>
-              <h4>Skills used</h4>
-              <p>
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-              </p>
-              <a href="https://github.com/Tasleemofx/Huddle" target="_blank">
-                <button class="code">Code on Github</button>
-              </a>
-              <a href="https://tasleemofx.github.io/Huddle/" target="_blank">
-                <button class="live">Live site</button>
-              </a>
-            </div>
           </div>
-        </section>
+          </section>
         <section id="Contact">
             I blog at <a href="https://Tasleemofx.hashnode.dev" target="_blank" rel="noopener noreferrer"> Tasleemofx's note</a>
             <article class="blog_article">

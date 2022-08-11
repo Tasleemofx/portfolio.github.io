@@ -32,7 +32,6 @@ nav ul li:hover{
 }
 nav ul li a{
   text-decoration: none;
-  color: var(--bg-main);
   border-bottom: none;
   cursor: pointer;
 
@@ -46,7 +45,7 @@ nav ul li a:visited{
 }
 
 nav ul li a:hover{
-  color: yellow;
+  color: var(--default-color);
   font-size: larger;
 }
 main{
@@ -60,7 +59,8 @@ main{
 }
   #Home{
   display: flex;
-  height: 100vh;
+  height: 70vh;
+  gap: 5em;
   }
 #name{
   font-family:DM Sans;
@@ -76,6 +76,7 @@ main{
 #profile{
   line-height: 2em;
 }
+
 #Skills ul{
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -83,26 +84,32 @@ main{
 .icons{
   width: 5em;
   height: 5em;
+  flex-direction: row;
 }
 .fa-html5{
   color: darksalmon;
 }
-.fa-css3, .fa-react, .fa-bootstrap{
+.fa-css3, .fa-bootstrap{
   color: blue;
 }
 .fa-node{
   color: green
 }
-
+#Projects{
+  display: flex;
+  flex-direction: column;
+}
 
 #Projects-only{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 1em auto;
+  gap: 2em;
 }
 .project{
   padding: 1em;
   width: 30vw;
+  height: max-content;
   text-align: center;
 }
 
@@ -135,7 +142,5 @@ main{
   transform: translateY(-1em);
 
 }
-footer{
-  color:var(--bg-main)
-}
+
 }

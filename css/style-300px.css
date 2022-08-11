@@ -261,6 +261,7 @@ width: 60vw;
 
 .fa-linkedin{
   color: var(--color-anim);
+  background: white;
 }
 .icons{
   width: 2.5em;
@@ -359,7 +360,23 @@ option{
 }
 footer{
   text-align: center;
-  background: var(--bg-nav-color);
-  color:var(--default-color);
+  background: var(--default-color);
+  color:var(--bg-nav-color);
   padding: 1em;
 }
+.contact-items{
+  
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  justify-content: space-between;
+  margin: 0.5em auto;
+
+}
+.item{
+  color: var(--bg-nav-color);
+  border: white 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+}
+

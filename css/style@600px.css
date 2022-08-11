@@ -25,6 +25,9 @@
   gap: 2em;
   margin: 0 0 20px 0;
 }
+#icons a:hover{
+  transform:scale(1.4);
+}
 
 nav{
   width: 100%;

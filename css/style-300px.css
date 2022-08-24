@@ -358,6 +358,15 @@ option{
 #Contact i{
   color: var(--bg-nav-color);
 }
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
 footer{
   text-align: center;
   background: var(--default-color);
@@ -375,8 +384,5 @@ footer{
 }
 .item{
   color: var(--bg-nav-color);
-  border: white 1px solid;
-  padding: 5px;
-  border-radius: 50%;
 }
 

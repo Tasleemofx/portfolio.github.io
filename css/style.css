@@ -118,29 +118,7 @@ main{
   height: 50vh;
   
 }
-#Contact button{
-  margin: 1rem;
-  padding: 0.7em;
-  color: black;
-  border-radius: 0.5em;
-  font-size: larger;
-  background-color: pink;
+#Contact {
+  width: 40vw;
 }
-
-.input{
-  background-color: grey;
-  border: none;
-  border-radius: 5%;
-}
-#Contact button a{
-  text-decoration: none;
-  color: black;
-}
-.contact:hover{
-  color: pink;
-  background-color: black;
-  transform: translateY(-1em);
-
-}
-
 }

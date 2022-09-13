@@ -390,7 +390,6 @@ footer{
   align-items: center;
   width: 20vw;
   justify-content: space-between;
-  margin: 0.5em auto;
 
 }
 .item{
@@ -408,6 +407,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .input-field input {
   outline: none;

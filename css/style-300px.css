@@ -194,7 +194,7 @@ nav ul li a:visited{
   margin: 0;
   background: url('../images/coffee-unsplash.jpg') no-repeat ;
   background-size:cover;
-  animation: leftmarg 3s 0.2s 1;
+  animation: leftmarg 2s 0s 1;
 }
  #icons{
   display: flex;
@@ -388,9 +388,8 @@ footer{
 #Contact{
   display: flex;
   align-items: center;
-  width: 20vw;
-  justify-content: space-between;
-
+  justify-content: center;
+  text-align: center;
 }
 .item{
   color: var(--bg-nav-color);
@@ -403,19 +402,23 @@ footer{
   font-size: larger;
   background-color: var(--default-color);
 }
-.contact-form {
+/* .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 .input-field input {
   outline: none;
   border: none;
   height: 2em;
   border-bottom: 1px solid var(--default-color);
+ 
 }
-
+.input-field textarea{
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
 .input-field {
   display: flex;
   flex-direction: column;

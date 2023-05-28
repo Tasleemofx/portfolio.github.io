@@ -5,7 +5,7 @@ const showlist = document.querySelector('nav ul');
 const bar1 = document.querySelector('.d1');
 const bar2 = document.querySelector('.d2');
 const bar3 = document.querySelector('.d3')
-let projectList= document.querySelectorAll(".project")
+let projectList;
 const selector = document.querySelector("select")
 const htmlCss = document.querySelectorAll(".html-css")
 const js = document.querySelectorAll(".js")
@@ -57,7 +57,8 @@ navUl.forEach((listItem)=>{
         name: "Ecommerce website",
     imgsrc: "images/ecommerce.png",
     description: "A full ecommerce website made with fakestore api, complete with flutterwave card checkout",
-    skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "typescript", "node", "js"],
+    skills: ["html5", "css3-alt", "bootstrap", 'react', "git-alt", "github", "node", "js"],
+        classes: ["react", "html-css"],
     github: "https://github.com/Tasleemofx/ecommercefsapi",
     livesite: "https://ecommercefsapi.vercel.app/"
             
@@ -67,6 +68,7 @@ navUl.forEach((listItem)=>{
             imgsrc: "images/lendsqr.png",
             description: "Lendsqr homepage and dashboard with data from a REST API",
             skills: ["html5", "css3-alt", "git-alt", "github", "js", "react", "sass", "typescript"],
+            classes: ["react", "ts", "html-css"],
             github: "https://github.com/Tasleemofx/lendsqr-fe-test",
             livesite: "https://tesleem-oladepo-lendsqr-fe-test.vercel.app/"
         },
@@ -75,6 +77,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/applenbanana.png",
     description: "A multi-page react app with a Landing page, an articles page and an about page",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+        classes: ["react", "html-css"],
     github: "https://github.com/Tasleemofx/appleandbanana",
     livesite: "https://appleandbanana.vercel.app/"
 
@@ -84,6 +87,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/CryptoUpdates.png",
     description: "Crypto News Webscraper built using web scraper API made with node and express.js. Gets up to date news from trusted news websites",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+        classes: ["react", "node", "html-css"],
     github: "https://github.com/Tasleemofx/webscrapper",
     livesite: "http://nodewebscrapper.herokuapp.com/news"
               
@@ -93,6 +97,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/admin.png",
     description: "An ecommerce website's admin dashboard",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+        classes: ["react", "html-css"],
     github: "https://github.com/Tasleemofx/admin-dashboard",
     livesite: "http://admin-dashboard-beryl.vercel.app/"
 
@@ -102,6 +107,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/sneakers.png",
     description: "An ecommerce product page built with react (Hooks)",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
+        classes: ["react", "html-css"],
     github: "https://github.com/Tasleemofx/ecommerce",
     livesite: "https://sneakers-iota.vercel.app/"
 
@@ -111,6 +117,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/giftlabs.png",
     description: "A gift shop website build with React, Typescript and Sass",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js", "sass", "typescript"],
+        classes: ["react", "html-css", "ts"],
     github: "https://github.com/Tasleemofx/giftLabs",
     livesite: "https://gift-labs.vercel.app/"
          },
@@ -119,6 +126,7 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/countries.png",
     description: "A react app built using REST API showing information about each country with a filter function to search",
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js", ],
+        classes: ["react", "html-css"],
               github: "https://github.com/Tasleemofx/countrylist",
                 livesite: "http://countrylist-rouge.vercel.app/"
               },
@@ -127,15 +135,16 @@ navUl.forEach((listItem)=>{
     imgsrc: "images/ajocard.png",
     description: "AjoCard Landing page",
     skills: ["html5", "css3-alt", "git-alt", "github", "js"],
+        classes: ["html-css"],
         github: "https://github.com/Tasleemofx/ajocard",
         livesite: "https://tasleemofx.github.io/ajocard/"
          }
 
     ]
-    let dubprojects = projects
+ 
    
     let h4elem = document.createElement('h4');
-    projects.map(({ name, imgsrc, description, skills, github, livesite})=>{
+    projects.map(({ name, imgsrc, description, skills, classes, github, livesite})=>{
         let maindiv = document.createElement('div');
         // add image tag and link
         let image = document.createElement('img');
@@ -184,36 +193,47 @@ navUl.forEach((listItem)=>{
         maindiv.appendChild(githublink)
         maindiv.appendChild(livelink)
         maindiv.classList.add("project")
+
+        classes.map(item => maindiv.classList.add(item))
         projectdiv.appendChild(maindiv)
+        projectList = document.querySelectorAll(".project")
     })
  
-    //select functionality
-// selector.addEventListener('change', change)
+    // select functionality
+selector.addEventListener('change', change)
 
-// function change() {
-    
-//     if(selector.value === 'html'){
-//        dubprojects = [...projects].filter(item=>{
-//          item.skills.find((i)=> (i === "html5"))
-//        })
+function change() {
+    projectList.forEach((item)=>item.classList.remove("hide"))
+    if(selector.value === 'html'){
+        [...projectList].filter(item=>{
+            if(!(item.classList.contains("html-css"))){
+                item.classList.add("hide")
+            }
+        })
 
-//     }else if(selector.value === "all"){
-//         dubprojects = [...projects]
-//     } else if (selector.value === "js"){
-//         [...projects].filter(item => {
-//             item.skills.find((i) => i === "js")
-//         })
-//     } else if (selector.value === "react") {
-//         dubprojects = [...projects].filter(item =>{
-//             item.skills.find((i) => i === "react")
-//         })
-//     }else if(selector.value === "node"){
-//         dubprojects = [...projects].filter(item =>{
-//        item.skills.find((item)=> item === "node")
-//     })
-// }
+    }else if(selector.value === "all"){
+        projectList.forEach((item) => item.classList.remove("hide"))
+    } else if (selector.value === "ts"){
+        [...projectList].filter(item=>{
+            if(!(item.classList.contains("ts"))){
+                item.classList.add("hide")
+            }
+        })
+    } else if (selector.value === "react") {
+        [...projectList].filter(item=>{
+            if(!(item.classList.contains("react"))){
+                item.classList.add("hide")
+            }
+        })
+    }else if(selector.value === "node"){
+        [...projectList].filter(item=>{
+            if(!(item.classList.contains("node"))){
+                item.classList.add("hide")
+            }
+    })
+}
 
-// }
+}
 
 
 

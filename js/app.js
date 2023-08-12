@@ -66,7 +66,7 @@ navUl.forEach((listItem)=>{
         {
             name: "Lendsqr",
             imgsrc: "images/lendsqr.png",
-            description: "Lendsqr homepage and dashboard with data from a REST API",
+            description: "Created with vite, Lendsqr homepage and dashboard with data from a REST API",
             skills: ["html5", "css3-alt", "git-alt", "github", "js", "react", "sass", "typescript"],
             classes: ["react", "ts", "html-css"],
             github: "https://github.com/Tasleemofx/lendsqr-fe-test",
@@ -89,7 +89,7 @@ navUl.forEach((listItem)=>{
     skills: ["html5", "css3-alt", 'react', "git-alt", "github", "js"],
         classes: ["react", "node", "html-css"],
     github: "https://github.com/Tasleemofx/webscrapper",
-    livesite: "http://nodewebscrapper.herokuapp.com/news"
+        livesite: "https://webscrapperfrontend.vercel.app/News"
               
             },
     {
@@ -242,6 +242,7 @@ function animate(){
 sections.forEach(item=>{
     let windowheight = window.innerHeight
     let revealtop = item.getBoundingClientRect().top
+    let revealbottom = item.getBoundingClientRect().bottom
     let revealpoint = 150
         if(revealtop < windowheight - revealpoint){
         item.classList.add('scroll')

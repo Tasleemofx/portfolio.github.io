@@ -271,13 +271,13 @@ width: 60vw;
 
 @keyframes botmarg{
   from { 
-    background: blue;
-    margin-left: -300%;
-    opacity: 0;
+    /* margin-left: -300%; */
+    opacity:0
   }
-  to{ background: white;
-      margin: 0;
-      opacity: 1
+  to{ 
+    opacity: 1;
+      /* margin: 0; */
+      transition: 2s;
   }
 }
 #Skills.scroll{
@@ -390,6 +390,7 @@ footer{
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 90vw;
 }
 .item{
   color: var(--bg-nav-color);
@@ -402,12 +403,7 @@ footer{
   font-size: larger;
   background-color: var(--default-color);
 }
-/* .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
+
 .input-field input {
   outline: none;
   border: none;
@@ -416,8 +412,10 @@ footer{
  
 }
 .input-field textarea{
+  padding: 10px;
   font-family: sans-serif;
   font-size: 1.2em;
+  width: 90vw;
 }
 .input-field {
   display: flex;

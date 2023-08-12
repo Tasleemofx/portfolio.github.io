@@ -66,5 +66,14 @@ nav{
   margin: 1em auto;
 }
 
+#Contact{
+  width: 50vw;
+  margin: 1em auto;
+}
+
+.input-field textarea{
+  width: 50vw;
+  margin: 1em auto;
+}
 }
 

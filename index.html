@@ -113,7 +113,7 @@
             <select name="projects">
               <option value="all" >All</option>
               <option value="html"><a href="#Projects" class="nav-link">HTML & CSS only</a></option>
-              <option value="js">Javascript</option>
+              <option value="ts">Typescript</option>
               <option value="react">React</option>
               <option value="node">Node.js</option>
             </select>
@@ -391,15 +391,24 @@
           </div>
           </section>
         <section id="Contact">
-            I blog at <a href="https://Tasleemofx.hashnode.dev" target="_blank" rel="noopener noreferrer"> Tasleemofx's note</a>
-            <article class="blog_article">
-              <span>I write mostly about Javascript</span>
-            </article>
-          <p>
-            You can reach me on <br/>
-            <a href="mailto:oladepotesleem@gmail.com" class="contact"><i class="fas fa-envelope"></i> oladepotesleem5@gmail.com</a><br/>
-            <a href="tel:+2347038655608" class="contact"><i class="fas fa-phone"></i> +2347038655608</a>
-          </p>
+          <form action="https://formsubmit.co/58edfc0b149a3be2c12f427ae5775f4e" method="POST">
+            <div class="input-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" required>
+          </div>
+            <input type="hidden" name="_next" value="./thanks.html">
+            <div class="input-field">
+              <label for="">Message</label>
+              <textarea id="body" cols="40" rows="15" name="message" required></textarea>
+            </div>
+              <!-- <a href="mailto:oladepotesleem5@gmail.com"> -->
+                <button class="submit_btn">Submit</button>
+              <!-- </a> -->
+          </form>
         </section>
 
       </main>

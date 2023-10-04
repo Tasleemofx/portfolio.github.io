@@ -16,14 +16,17 @@ const toggletheme = document.querySelector('.toggle');
 const indicator = document.querySelector(' .indicator');
 const bodyclass = document.querySelector('body');
 const homebg= document.querySelector('#Home')
-
-const sections = document.querySelectorAll('section');
 // light mode and dark mode
 
 toggletheme.addEventListener("click",()=>{
     indicator.classList.toggle("active")
     bodyclass.classList.toggle("bodyclass")
 })
+
+//scroll reveal
+ScrollReveal().reveal('#Home',{ delay: 250})
+ScrollReveal().reveal('#Skills', { delay: 250 })
+ScrollReveal().reveal('.project', { delay: 250 })
 
 
 //burger interactivity
@@ -78,49 +81,3 @@ function change() {
     })
 }
 }
-
-
-
-window.addEventListener("scroll", animate)
-function animate(){
-sections.forEach(item=>{
-    let windowheight = window.innerHeight
-    let revealtop = item.getBoundingClientRect().top
-    let revealpoint = 150
-        if(revealtop < windowheight - revealpoint){
-        item.classList.add('scroll')
-        }else{
-            item.classList.remove('scroll')
-        }
-})
-}
-
-
-//email functionality
-
-
-// let submit_btn= document.querySelector('.submit_btn')
-
-// submit_btn.addEventListener('click',(e)=>{
-//     let namefield = document.querySelector('#name-field').value;
-//     let email = document.querySelector('#email').value;
-//     let subject = document.querySelector('#subject').value;
-//     let body = document.querySelector('#body').value;
-//     e.preventDefault();
-//     if(!namefield || !email || !subject || !body){
-//         console.log({namefield, email, subject, body})
-//     }  else 
-//     if(namefield && email && subject && body){
-//         Email.send({
-//     Host: "smtp.gmail.com",
-//     Username: "oladepotesleem5@gmail.com",
-//     Password: "aavoeyxmvborxzia",
-//     To: 'oladepotesleem5@gmail.com',
-//     From: email,
-//     Subject: subject,
-//     Body: body
-// }).then(
-//     () => alert("message sent!")
-// );
-//     }
-// })
